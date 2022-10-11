@@ -1,0 +1,55 @@
+[0.024s] Invoking command in '/home/jingyan/px4_ros_com_ros2/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/jingyan/px4_ros_com_ros2/src/cartographer_config -DCMAKE_INSTALL_PREFIX=/home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer
+[0.237s] -- The C compiler identification is GNU 9.4.0
+[0.378s] -- The CXX compiler identification is GNU 9.4.0
+[0.389s] -- Check for working C compiler: /usr/bin/cc
+[0.477s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.479s] -- Detecting C compiler ABI info
+[0.557s] -- Detecting C compiler ABI info - done
+[0.571s] -- Detecting C compile features
+[0.572s] -- Detecting C compile features - done
+[0.574s] -- Check for working CXX compiler: /usr/bin/c++
+[0.663s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.664s] -- Detecting CXX compiler ABI info
+[0.764s] -- Detecting CXX compiler ABI info - done
+[0.779s] -- Detecting CXX compile features
+[0.780s] -- Detecting CXX compile features - done
+[0.783s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.817s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.817s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.034s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.126s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.127s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.128s] -- Added test 'lint_cmake' to check CMake code style
+[1.129s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.130s] -- Added test 'xmllint' to check XML markup files
+[1.131s] -- Configuring done
+[1.133s] -- Generating done
+[1.133s] -- Build files have been written to: /home/jingyan/px4_ros_com_ros2/build/fishbot_cartographer
+[1.136s] Invoked command in '/home/jingyan/px4_ros_com_ros2/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/jingyan/px4_ros_com_ros2/src/cartographer_config -DCMAKE_INSTALL_PREFIX=/home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer
+[1.137s] Invoking command in '/home/jingyan/px4_ros_com_ros2/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/fishbot_cartographer -- -j16 -l16
+[1.180s] Invoked command in '/home/jingyan/px4_ros_com_ros2/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/fishbot_cartographer -- -j16 -l16
+[1.227s] Invoking command in '/home/jingyan/px4_ros_com_ros2/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jingyan/px4_ros_com_ros2/build/fishbot_cartographer
+[1.232s] -- Install configuration: ""
+[1.233s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/config
+[1.233s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/config/fishbot_laser_2d.lua
+[1.233s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/config/fishbot_2d.lua
+[1.233s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/launch
+[1.233s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/launch/cartographer_pure_laser.launch.py
+[1.233s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/launch/cartographer.launch.py
+[1.233s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/rviz
+[1.234s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/ament_index/resource_index/package_run_dependencies/fishbot_cartographer
+[1.234s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/ament_index/resource_index/parent_prefix_path/fishbot_cartographer
+[1.234s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/environment/ament_prefix_path.sh
+[1.234s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/environment/ament_prefix_path.dsv
+[1.234s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/environment/path.sh
+[1.234s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/environment/path.dsv
+[1.234s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.bash
+[1.234s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.sh
+[1.235s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.zsh
+[1.235s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.dsv
+[1.235s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/package.dsv
+[1.235s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/ament_index/resource_index/packages/fishbot_cartographer
+[1.235s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/cmake/fishbot_cartographerConfig.cmake
+[1.235s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/cmake/fishbot_cartographerConfig-version.cmake
+[1.236s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/package.xml
+[1.236s] Invoked command in '/home/jingyan/px4_ros_com_ros2/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jingyan/px4_ros_com_ros2/build/fishbot_cartographer
