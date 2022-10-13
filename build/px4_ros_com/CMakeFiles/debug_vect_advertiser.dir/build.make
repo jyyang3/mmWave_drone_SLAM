@@ -88,6 +88,10 @@ debug_vect_advertiser: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_intr
 debug_vect_advertiser: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
 debug_vect_advertiser: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 debug_vect_advertiser: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+debug_vect_advertiser: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+debug_vect_advertiser: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_c.so
+debug_vect_advertiser: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+debug_vect_advertiser: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_cpp.so
 debug_vect_advertiser: /opt/ros/foxy/lib/liblibstatistics_collector.so
 debug_vect_advertiser: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
 debug_vect_advertiser: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so
@@ -119,6 +123,7 @@ debug_vect_advertiser: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_
 debug_vect_advertiser: /opt/ros/foxy/lib/libtracetools.so
 debug_vect_advertiser: /home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so
 debug_vect_advertiser: /opt/ros/foxy/lib/libsensor_msgs__rosidl_generator_c.so
+debug_vect_advertiser: /opt/ros/foxy/lib/libnav_msgs__rosidl_generator_c.so
 debug_vect_advertiser: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 debug_vect_advertiser: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
 debug_vect_advertiser: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so

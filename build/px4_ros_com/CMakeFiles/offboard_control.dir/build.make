@@ -88,6 +88,10 @@ offboard_control: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspec
 offboard_control: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
 offboard_control: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 offboard_control: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+offboard_control: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+offboard_control: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_c.so
+offboard_control: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+offboard_control: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_cpp.so
 offboard_control: /opt/ros/foxy/lib/liblibstatistics_collector.so
 offboard_control: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
 offboard_control: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so
@@ -119,6 +123,7 @@ offboard_control: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.s
 offboard_control: /opt/ros/foxy/lib/libtracetools.so
 offboard_control: /home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so
 offboard_control: /opt/ros/foxy/lib/libsensor_msgs__rosidl_generator_c.so
+offboard_control: /opt/ros/foxy/lib/libnav_msgs__rosidl_generator_c.so
 offboard_control: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 offboard_control: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
 offboard_control: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so

@@ -1,0 +1,87 @@
+[35m[1mScanning dependencies of target Odom_transform[0m
+[  4%] Built target sensor_combined_listener
+[  4%] Built target vehicle_gps_position_listener
+[  6%] Built target frame_transforms
+[  7%] [32mBuilding CXX object CMakeFiles/Odom_transform.dir/src/examples/offboard/Odom_transform.cpp.o[0m
+[ 10%] Built target debug_vect_advertiser
+[ 10%] Built target offboard_control
+[ 99%] Built target micrortps_agent
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:[m[K In member function ‘[01m[Kvoid Px4OdomTransform::odom_convert(px4_msgs::msg::VehicleOdometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:145:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+  145 |  odom_msg.pose.pose.position.x=[01;31m[Kmsg[m[K->position[1];
+      |                                [01;31m[K^~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:145:32:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/duration.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   26 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+                 from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   26 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   26 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/home/jingyan/px4_ros_com_ros2/install/px4_msgs/include/px4_msgs/msg/vehicle_odometry.hpp:7[m[K,
+                 from [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:2[m[K:
+[01m[K/home/jingyan/px4_ros_com_ros2/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpx4_msgs::msg[m[K’
+   26 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/nav_msgs/msg/detail/odometry__struct.hpp:19[m[K,
+                 from [01m[K/opt/ros/foxy/include/nav_msgs/msg/odometry.hpp:7[m[K,
+                 from [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:3[m[K:
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/header__struct.hpp:30:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   30 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.hpp:19[m[K,
+                 from [01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:19[m[K,
+                 from [01m[K/opt/ros/foxy/include/nav_msgs/msg/detail/odometry__struct.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/nav_msgs/msg/odometry.hpp:7[m[K,
+                 from [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:3[m[K:
+[01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+   26 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/nav_msgs/msg/odometry.hpp:7[m[K,
+                 from [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:3[m[K:
+[01m[K/opt/ros/foxy/include/nav_msgs/msg/detail/odometry__struct.hpp:34:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg[m[K’
+   34 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:52:85:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   52 | void Px4OdomTransform::odom_convert([01;35m[Kconst px4_msgs::msg::VehicleOdometry::SharedPtr _msg[m[K){
+      |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+make[2]: *** [CMakeFiles/Odom_transform.dir/build.make:63: CMakeFiles/Odom_transform.dir/src/examples/offboard/Odom_transform.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:306: CMakeFiles/Odom_transform.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

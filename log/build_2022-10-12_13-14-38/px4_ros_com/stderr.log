@@ -1,0 +1,22 @@
+openjdk version "13.0.7" 2021-04-20
+OpenJDK Runtime Environment (build 13.0.7+5-Ubuntu-0ubuntu120.04)
+OpenJDK 64-Bit Server VM (build 13.0.7+5-Ubuntu-0ubuntu120.04, mixed mode)
+CMake Error at CMakeLists.txt:74 (add_executable):
+  Cannot find source file:
+
+    src/examples/offboard/offboard_control.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+Call Stack (most recent call first):
+  CMakeLists.txt:106 (custom_executable)
+
+
+CMake Error at CMakeLists.txt:74 (add_executable):
+  No SOURCES given to target: offboard_control
+Call Stack (most recent call first):
+  CMakeLists.txt:106 (custom_executable)
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+make: *** [Makefile:3216: cmake_check_build_system] Error 1

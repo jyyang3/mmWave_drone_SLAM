@@ -88,6 +88,10 @@ sensor_combined_listener: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_i
 sensor_combined_listener: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
 sensor_combined_listener: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 sensor_combined_listener: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+sensor_combined_listener: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+sensor_combined_listener: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_c.so
+sensor_combined_listener: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+sensor_combined_listener: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_cpp.so
 sensor_combined_listener: /opt/ros/foxy/lib/liblibstatistics_collector.so
 sensor_combined_listener: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
 sensor_combined_listener: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so
@@ -119,6 +123,7 @@ sensor_combined_listener: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesuppo
 sensor_combined_listener: /opt/ros/foxy/lib/libtracetools.so
 sensor_combined_listener: /home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so
 sensor_combined_listener: /opt/ros/foxy/lib/libsensor_msgs__rosidl_generator_c.so
+sensor_combined_listener: /opt/ros/foxy/lib/libnav_msgs__rosidl_generator_c.so
 sensor_combined_listener: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 sensor_combined_listener: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
 sensor_combined_listener: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so

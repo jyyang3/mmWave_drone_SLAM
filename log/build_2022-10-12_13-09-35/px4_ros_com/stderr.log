@@ -1,0 +1,11 @@
+openjdk version "13.0.7" 2021-04-20
+OpenJDK Runtime Environment (build 13.0.7+5-Ubuntu-0ubuntu120.04)
+OpenJDK 64-Bit Server VM (build 13.0.7+5-Ubuntu-0ubuntu120.04, mixed mode)
+CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+  ament_target_dependencies() the passed package name 'nav_msgs' was not
+  found before
+Call Stack (most recent call first):
+  CMakeLists.txt:88 (ament_target_dependencies)
+
+
+make: *** [Makefile:3216: cmake_check_build_system] Error 1

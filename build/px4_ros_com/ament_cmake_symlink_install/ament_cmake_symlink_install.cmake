@@ -322,6 +322,9 @@ include("/home/jingyan/px4_ros_com_ros2/build/px4_ros_com/ament_cmake_symlink_in
 # install("TARGETS" "offboard_control" "DESTINATION" "lib/px4_ros_com")
 include("/home/jingyan/px4_ros_com_ros2/build/px4_ros_com/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
+# install("TARGETS" "Odom_transform" "DESTINATION" "lib/px4_ros_com")
+include("/home/jingyan/px4_ros_com_ros2/build/px4_ros_com/ament_cmake_symlink_install_targets_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
 # install(FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/px4_ros_com/environment")
 ament_cmake_symlink_install_files("/home/jingyan/px4_ros_com_ros2/src/px4_ros_com" FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/px4_ros_com/environment")
 
