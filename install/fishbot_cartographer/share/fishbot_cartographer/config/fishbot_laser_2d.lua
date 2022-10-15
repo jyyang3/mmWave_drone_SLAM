@@ -5,8 +5,8 @@ options = {
   trajectory_builder = TRAJECTORY_BUILDER,
   map_frame = "map",
   --  跟踪和发布的frame都改成雷达的frameID
-  tracking_frame = "link_lidar",
-  published_frame = "link_lidar",
+  tracking_frame = "base_link",
+  published_frame = "base_link",
   odom_frame = "odom",
   -- true改为false，不用提供里程计数据
   provide_odom_frame = true,

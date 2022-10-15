@@ -1,6 +1,4 @@
-/home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/config/fishbot_laser_2d.lua
 /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/config/fishbot_2d.lua
-/home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/launch/cartographer_pure_laser.launch.py
 /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/fishbot_cartographer/launch/cartographer.launch.py
 /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/ament_index/resource_index/package_run_dependencies/fishbot_cartographer
 /home/jingyan/px4_ros_com_ros2/install/fishbot_cartographer/share/ament_index/resource_index/parent_prefix_path/fishbot_cartographer
