@@ -1,0 +1,57 @@
+[0.013s] Invoking command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/px4_ros_com -- -j16 -l16
+[0.046s] -- Using C++17 compiler
+[0.046s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.071s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.238s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.253s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.256s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.385s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.424s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.452s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.453s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.568s] -- Found rmw_fastrtps_cpp: 1.3.1 (/opt/ros/foxy/share/rmw_fastrtps_cpp/cmake)
+[0.685s] -- Found px4_msgs: 2.0.1 (/home/jingyan/px4_ros_com_ros2/install/px4_msgs/share/px4_msgs/cmake)
+[0.699s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.791s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.848s] -- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+[0.858s] -- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.170s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.172s] -- fastrtpsgen found in /usr/local/bin
+[1.231s] openjdk version "13.0.7" 2021-04-20
+[1.232s] OpenJDK Runtime Environment (build 13.0.7+5-Ubuntu-0ubuntu120.04)
+[1.232s] OpenJDK 64-Bit Server VM (build 13.0.7+5-Ubuntu-0ubuntu120.04, mixed mode)
+[1.269s] -- fastrtpsgen version 1.0.4
+[1.269s] -- px4_msgs message dir under /home/jingyan/px4_ros_com_ros2/install/px4_msgs/share/px4_msgs/msg
+[1.269s] -- IDL definitions under /home/jingyan/px4_ros_com_ros2/install/px4_msgs/share/px4_msgs/msg
+[1.269s] -- Retrieving list of msgs to send...
+[1.320s] -- List of msgs to send: DebugArray, DebugKeyValue, DebugValue, DebugVect, OffboardControlMode, OnboardComputerStatus, PositionSetpoint, PositionSetpointTriplet, SensorOpticalFlow, TelemetryStatus, Timesync, TrajectoryBezier, TrajectorySetpoint, VehicleAttitudeSetpoint, VehicleCommand, VehicleLocalPositionSetpoint, VehicleRatesSetpoint, VehicleTrajectoryBezier, VehicleTrajectoryWaypoint, VehicleMocapOdometry, VehicleVisualOdometry
+[1.320s] -- Retrieving list of msgs to receive...
+[1.367s] -- List of msgs to receive: CollisionConstraints, SensorCombined, Timesync, TimesyncStatus, TrajectoryWaypoint, VehicleControlMode, VehicleOdometry, VehicleStatus
+[1.457s] -- Configuring done
+[1.613s] -- Generating done
+[1.615s] -- Build files have been written to: /home/jingyan/px4_ros_com_ros2/build/px4_ros_com
+[1.660s] [  2%] [32m[1mLinking CXX executable vehicle_gps_position_listener[0m
+[1.660s] [  2%] [32m[1mLinking CXX executable debug_vect_advertiser[0m
+[1.663s] [  4%] Built target frame_transforms
+[1.666s] [  5%] [32m[1mLinking CXX executable offboard_control[0m
+[1.667s] [  6%] [32m[1mLinking CXX executable sensor_combined_listener[0m
+[1.675s] [  7%] [32m[1mLinking CXX executable Odom_transform[0m
+[1.705s] [ 96%] Built target micrortps_agent
+[1.964s] [ 97%] Built target debug_vect_advertiser
+[2.057s] [ 98%] Built target vehicle_gps_position_listener
+[2.077s] [ 99%] Built target sensor_combined_listener
+[2.105s] [100%] Built target offboard_control
+[2.156s] [100%] Built target Odom_transform
+[2.168s] Invoked command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/px4_ros_com -- -j16 -l16
+[2.308s] Invoking command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jingyan/px4_ros_com_ros2/build/px4_ros_com
+[2.321s] -- Install configuration: ""
+[2.322s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/include/px4_ros_com
+[2.323s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/cmake
+[2.325s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/lib/libframe_transforms.so
+[2.326s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/bin/micrortps_agent
+[2.326s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/launch
+[2.326s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/test
+[2.326s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/package.dsv
+[2.327s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake
+[2.327s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake
+[2.335s] Invoked command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jingyan/px4_ros_com_ros2/build/px4_ros_com
