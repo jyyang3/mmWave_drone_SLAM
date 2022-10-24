@@ -1,4 +1,4 @@
-Odometry is partially working,
+Drone odometry is partially working but there exist time sync problems.
 
 Ti radar transform is working.
 

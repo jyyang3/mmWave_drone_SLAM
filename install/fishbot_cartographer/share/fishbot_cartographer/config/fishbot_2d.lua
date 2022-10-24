@@ -5,17 +5,17 @@ options = {
   map_builder = MAP_BUILDER,
   trajectory_builder = TRAJECTORY_BUILDER,
   map_frame = "map",
-  tracking_frame = "lidar_link",
+  tracking_frame = "base_link",
   -- base_link改为odom,发布map到odom之间的位姿态
-  published_frame = "lidar_link",
+  published_frame = "odom",
   odom_frame = "odom",
   -- true改为false，不用提供里程计数据
-  provide_odom_frame = true, -- false,
+  provide_odom_frame = false,
   -- false改为true，仅发布2D位资
   publish_frame_projected_to_2d = true,
   -- use_pose_extrapolator = true,
   -- false改为true，使用里程计数据
-  use_odometry = false, --true,
+  use_odometry = true,
   use_nav_sat = false,
   use_landmarks = false,
   -- 0改为1,使用一个雷达
@@ -51,7 +51,7 @@ TRAJECTORY_BUILDER_2D.use_imu_data = false
 -- false改成true,使用实时回环检测来进行前端的扫描匹配
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true 
 -- 1.0改成0.1,提高对运动的敏感度
-TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.1)
+TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(1)
 
 -- 0.55改成0.65,Fast csm的最低分数，高于此分数才进行优化。
 POSE_GRAPH.constraint_builder.min_score = 0.65
