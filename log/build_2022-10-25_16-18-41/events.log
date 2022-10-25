@@ -1,0 +1,184 @@
+[0.000000] (-) TimerEvent: {}
+[0.000456] (-) JobUnselected: {'identifier': 'fishbot_cartographer'}
+[0.000528] (-) JobUnselected: {'identifier': 'iwr6843aop_pub'}
+[0.000580] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.001213] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs')])}
+[0.001649] (px4_ros_com) JobStarted: {'identifier': 'px4_ros_com'}
+[0.015086] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'cmake'}
+[0.015974] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'build'}
+[0.016898] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com', '--', '-j16', '-l16'], 'cwd': '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jingyan'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1760'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/jingyan'), ('OLDPWD', '/home/jingyan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1407'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'jingyan'), ('JOURNAL_STREAM', '8:54822'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jingyan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/jingyan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jingyan-Lenovo-Legion-R7000-2020:@/tmp/.ICE-unix/1870,unix/jingyan-Lenovo-Legion-R7000-2020:/tmp/.ICE-unix/1870'), ('INVOCATION_ID', '21415768a480440a9edaa3ac8c5cbf2a'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c2e14812_703e_4ff6_9d36_5e0412cc8096'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy')]), 'shell': False}
+[0.094321] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target Odom_transform\x1b[0m\n'}
+[0.099574] (-) TimerEvent: {}
+[0.112821] (px4_ros_com) StdoutLine: {'line': b'[  2%] Built target debug_vect_advertiser\n'}
+[0.114508] (px4_ros_com) StdoutLine: {'line': b'[  4%] Built target sensor_combined_listener\n'}
+[0.116780] (px4_ros_com) StdoutLine: {'line': b'[  8%] Built target vehicle_gps_position_listener\n'}
+[0.117086] (px4_ros_com) StdoutLine: {'line': b'[  8%] Built target frame_transforms\n'}
+[0.119803] (px4_ros_com) StdoutLine: {'line': b'[ 10%] Built target offboard_control\n'}
+[0.135641] (px4_ros_com) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/Odom_transform.dir/src/examples/offboard/Odom_transform.cpp.o\x1b[0m\n'}
+[0.158095] (px4_ros_com) StdoutLine: {'line': b'[ 99%] Built target micrortps_agent\n'}
+[0.199732] (-) TimerEvent: {}
+[0.300229] (-) TimerEvent: {}
+[0.400702] (-) TimerEvent: {}
+[0.501229] (-) TimerEvent: {}
+[0.601853] (-) TimerEvent: {}
+[0.702363] (-) TimerEvent: {}
+[0.802766] (-) TimerEvent: {}
+[0.903265] (-) TimerEvent: {}
+[1.003821] (-) TimerEvent: {}
+[1.104253] (-) TimerEvent: {}
+[1.204714] (-) TimerEvent: {}
+[1.305221] (-) TimerEvent: {}
+[1.405625] (-) TimerEvent: {}
+[1.505919] (-) TimerEvent: {}
+[1.606259] (-) TimerEvent: {}
+[1.706644] (-) TimerEvent: {}
+[1.800721] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPx4OdomTransform::Px4OdomTransform()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.801080] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:42:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscan_subscription\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kscan_subscription_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.801187] (px4_ros_com) StderrLine: {'line': b'   42 |   \x1b[01;31m\x1b[Kscan_subscription\x1b[m\x1b[K =\n'}
+[1.801267] (px4_ros_com) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.801347] (px4_ros_com) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kscan_subscription_\x1b[m\x1b[K\n'}
+[1.803546] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[1.803829] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:46:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>::store(std_msgs::msg::Header_<std::allocator<void> >::_stamp_type&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.803943] (px4_ros_com) StderrLine: {'line': b'   46 |                     timestamp_.store(_scan->header.stamp\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.804040] (px4_ros_com) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.804126] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_atomic.h:33\x1b[m\x1b[K,\n'}
+[1.804208] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:82\x1b[m\x1b[K,\n'}
+[1.804290] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[1.804372] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:1\x1b[m\x1b[K:\n'}
+[1.804456] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/atomic_base.h:390:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid std::__atomic_base<_IntTp>::store(std::__atomic_base<_IntTp>::__int_type, std::memory_order) [with _ITp = long unsigned int; std::__atomic_base<_IntTp>::__int_type = long unsigned int; std::memory_order = std::memory_order]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.804542] (px4_ros_com) StderrLine: {'line': b'  390 |       \x1b[01;36m\x1b[Kstore\x1b[m\x1b[K(__int_type __i, memory_order __m = memory_order_seq_cst) noexcept\n'}
+[1.804624] (px4_ros_com) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.804707] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/atomic_base.h:390:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::__atomic_base<long unsigned int>::__int_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[1.804805] (px4_ros_com) StderrLine: {'line': b'  390 |       store(\x1b[01;36m\x1b[K__int_type __i\x1b[m\x1b[K, memory_order __m = memory_order_seq_cst) noexcept\n'}
+[1.804894] (px4_ros_com) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.804975] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/atomic_base.h:401:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid std::__atomic_base<_IntTp>::store(std::__atomic_base<_IntTp>::__int_type, std::memory_order) volatile [with _ITp = long unsigned int; std::__atomic_base<_IntTp>::__int_type = long unsigned int; std::memory_order = std::memory_order]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.805053] (px4_ros_com) StderrLine: {'line': b'  401 |       \x1b[01;36m\x1b[Kstore\x1b[m\x1b[K(__int_type __i,\n'}
+[1.805139] (px4_ros_com) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.805215] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/atomic_base.h:401:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::__atomic_base<long unsigned int>::__int_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[1.805296] (px4_ros_com) StderrLine: {'line': b'  401 |       store(\x1b[01;36m\x1b[K__int_type __i\x1b[m\x1b[K,\n'}
+[1.805379] (px4_ros_com) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.806742] (-) TimerEvent: {}
+[1.808307] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Px4OdomTransform::odom_convert(px4_msgs::msg::VehicleOdometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.808658] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:87:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[1.808811] (px4_ros_com) StderrLine: {'line': b'   87 |  odom_msg.header.stamp = \x1b[01;31m\x1b[Ktimestamp_\x1b[m\x1b[K; // _scan->header.stamp; // this->get_clock()->now();\n'}
+[1.808908] (px4_ros_com) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.808994] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/time.hpp:7\x1b[m\x1b[K,\n'}
+[1.809082] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/time.hpp:18\x1b[m\x1b[K,\n'}
+[1.809161] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/clock.hpp:23\x1b[m\x1b[K,\n'}
+[1.809248] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/timer.hpp:27\x1b[m\x1b[K,\n'}
+[1.809330] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:27\x1b[m\x1b[K,\n'}
+[1.809408] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.809488] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.809779] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.809879] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.809966] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.810056] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.810145] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.810230] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.810318] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:1\x1b[m\x1b[K:\n'}
+[1.810404] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr builtin_interfaces::msg::Time_<std::allocator<void> >& builtin_interfaces::msg::Time_<std::allocator<void> >::operator=(const builtin_interfaces::msg::Time_<std::allocator<void> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.810500] (px4_ros_com) StderrLine: {'line': b'   31 | struct \x1b[01;36m\x1b[KTime_\x1b[m\x1b[K\n'}
+[1.810599] (px4_ros_com) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.810683] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.810766] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr builtin_interfaces::msg::Time_<std::allocator<void> >& builtin_interfaces::msg::Time_<std::allocator<void> >::operator=(builtin_interfaces::msg::Time_<std::allocator<void> >&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.810850] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.810950] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:146:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[1.811073] (px4_ros_com) StderrLine: {'line': b'  146 |  t.header.stamp = \x1b[01;31m\x1b[Ktimestamp_\x1b[m\x1b[K; //_scan->header.stamp; // this->get_clock()->now();\n'}
+[1.811178] (px4_ros_com) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.811259] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/time.hpp:7\x1b[m\x1b[K,\n'}
+[1.811344] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/time.hpp:18\x1b[m\x1b[K,\n'}
+[1.811425] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/clock.hpp:23\x1b[m\x1b[K,\n'}
+[1.811509] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/timer.hpp:27\x1b[m\x1b[K,\n'}
+[1.811601] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:27\x1b[m\x1b[K,\n'}
+[1.811682] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.811764] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.811840] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.811911] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.811998] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.812079] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.812162] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.812244] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.812316] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:1\x1b[m\x1b[K:\n'}
+[1.812385] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr builtin_interfaces::msg::Time_<std::allocator<void> >& builtin_interfaces::msg::Time_<std::allocator<void> >::operator=(const builtin_interfaces::msg::Time_<std::allocator<void> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.812458] (px4_ros_com) StderrLine: {'line': b'   31 | struct \x1b[01;36m\x1b[KTime_\x1b[m\x1b[K\n'}
+[1.812537] (px4_ros_com) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.812846] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.812940] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr builtin_interfaces::msg::Time_<std::allocator<void> >& builtin_interfaces::msg::Time_<std::allocator<void> >::operator=(builtin_interfaces::msg::Time_<std::allocator<void> >&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.813040] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.813126] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:172:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[1.813217] (px4_ros_com) StderrLine: {'line': b'  172 |  t_footprint.header.stamp = \x1b[01;31m\x1b[Ktimestamp_\x1b[m\x1b[K; //_scan->header.stamp; // this->get_clock()->now();\n'}
+[1.813300] (px4_ros_com) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.813391] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/time.hpp:7\x1b[m\x1b[K,\n'}
+[1.813475] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/time.hpp:18\x1b[m\x1b[K,\n'}
+[1.813558] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/clock.hpp:23\x1b[m\x1b[K,\n'}
+[1.813641] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/timer.hpp:27\x1b[m\x1b[K,\n'}
+[1.813724] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:27\x1b[m\x1b[K,\n'}
+[1.813800] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.813872] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.813949] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.814221] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.814306] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.814388] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.814472] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.814551] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.814634] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:1\x1b[m\x1b[K:\n'}
+[1.814723] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr builtin_interfaces::msg::Time_<std::allocator<void> >& builtin_interfaces::msg::Time_<std::allocator<void> >::operator=(const builtin_interfaces::msg::Time_<std::allocator<void> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.814810] (px4_ros_com) StderrLine: {'line': b'   31 | struct \x1b[01;36m\x1b[KTime_\x1b[m\x1b[K\n'}
+[1.814898] (px4_ros_com) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.814983] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.815098] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr builtin_interfaces::msg::Time_<std::allocator<void> >& builtin_interfaces::msg::Time_<std::allocator<void> >::operator=(builtin_interfaces::msg::Time_<std::allocator<void> >&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.815184] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.815267] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:187:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[1.815350] (px4_ros_com) StderrLine: {'line': b'  187 |  t_baselink.header.stamp = \x1b[01;31m\x1b[Ktimestamp_\x1b[m\x1b[K; //_scan->header.stamp; // this->get_clock()->now();\n'}
+[1.815427] (px4_ros_com) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.815499] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/time.hpp:7\x1b[m\x1b[K,\n'}
+[1.815591] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/time.hpp:18\x1b[m\x1b[K,\n'}
+[1.815664] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/clock.hpp:23\x1b[m\x1b[K,\n'}
+[1.815731] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/timer.hpp:27\x1b[m\x1b[K,\n'}
+[1.815791] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:27\x1b[m\x1b[K,\n'}
+[1.815857] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.815924] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.815998] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.816083] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.816148] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.816212] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.816284] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.816355] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.816425] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:1\x1b[m\x1b[K:\n'}
+[1.816501] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr builtin_interfaces::msg::Time_<std::allocator<void> >& builtin_interfaces::msg::Time_<std::allocator<void> >::operator=(const builtin_interfaces::msg::Time_<std::allocator<void> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.816586] (px4_ros_com) StderrLine: {'line': b'   31 | struct \x1b[01;36m\x1b[KTime_\x1b[m\x1b[K\n'}
+[1.816665] (px4_ros_com) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.816743] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.816824] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr builtin_interfaces::msg::Time_<std::allocator<void> >& builtin_interfaces::msg::Time_<std::allocator<void> >::operator=(builtin_interfaces::msg::Time_<std::allocator<void> >&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.816913] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:31:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::atomic<long unsigned int>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.906857] (-) TimerEvent: {}
+[2.007222] (-) TimerEvent: {}
+[2.107684] (-) TimerEvent: {}
+[2.207987] (-) TimerEvent: {}
+[2.308334] (-) TimerEvent: {}
+[2.408822] (-) TimerEvent: {}
+[2.509235] (-) TimerEvent: {}
+[2.609531] (-) TimerEvent: {}
+[2.709887] (-) TimerEvent: {}
+[2.810369] (-) TimerEvent: {}
+[2.910849] (-) TimerEvent: {}
+[3.011193] (-) TimerEvent: {}
+[3.111666] (-) TimerEvent: {}
+[3.212098] (-) TimerEvent: {}
+[3.312457] (-) TimerEvent: {}
+[3.412889] (-) TimerEvent: {}
+[3.513420] (-) TimerEvent: {}
+[3.613826] (-) TimerEvent: {}
+[3.714174] (-) TimerEvent: {}
+[3.814562] (-) TimerEvent: {}
+[3.915081] (-) TimerEvent: {}
+[3.984523] (px4_ros_com) StderrLine: {'line': b'make[2]: *** [CMakeFiles/Odom_transform.dir/build.make:63: CMakeFiles/Odom_transform.dir/src/examples/offboard/Odom_transform.cpp.o] Error 1\n'}
+[3.984911] (px4_ros_com) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:306: CMakeFiles/Odom_transform.dir/all] Error 2\n'}
+[3.985320] (px4_ros_com) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[3.988845] (px4_ros_com) CommandEnded: {'returncode': 2}
+[4.015203] (-) TimerEvent: {}
+[4.115682] (-) TimerEvent: {}
+[4.216268] (-) TimerEvent: {}
+[4.317157] (-) TimerEvent: {}
+[4.319626] (px4_ros_com) JobEnded: {'identifier': 'px4_ros_com', 'rc': 2}
+[4.330767] (-) EventReactorShutdown: {}

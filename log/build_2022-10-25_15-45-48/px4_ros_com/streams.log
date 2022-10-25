@@ -1,0 +1,59 @@
+[0.022s] Invoking command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/px4_ros_com -- -j16 -l16
+[0.072s] -- Using C++17 compiler
+[0.073s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.101s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.299s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.329s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.332s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.465s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.512s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.554s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.556s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.696s] -- Found rmw_fastrtps_cpp: 1.3.1 (/opt/ros/foxy/share/rmw_fastrtps_cpp/cmake)
+[0.803s] -- Found px4_msgs: 2.0.1 (/home/jingyan/px4_ros_com_ros2/install/px4_msgs/share/px4_msgs/cmake)
+[0.819s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.926s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.000s] -- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+[1.009s] -- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.325s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.328s] -- fastrtpsgen found in /usr/local/bin
+[1.450s] openjdk version "13.0.7" 2021-04-20
+[1.451s] OpenJDK Runtime Environment (build 13.0.7+5-Ubuntu-0ubuntu120.04)
+[1.451s] OpenJDK 64-Bit Server VM (build 13.0.7+5-Ubuntu-0ubuntu120.04, mixed mode)
+[1.501s] -- fastrtpsgen version 1.0.4
+[1.501s] -- px4_msgs message dir under /home/jingyan/px4_ros_com_ros2/install/px4_msgs/share/px4_msgs/msg
+[1.501s] -- IDL definitions under /home/jingyan/px4_ros_com_ros2/install/px4_msgs/share/px4_msgs/msg
+[1.501s] -- Retrieving list of msgs to send...
+[1.557s] -- List of msgs to send: DebugArray, DebugKeyValue, DebugValue, DebugVect, OffboardControlMode, OnboardComputerStatus, PositionSetpoint, PositionSetpointTriplet, SensorOpticalFlow, TelemetryStatus, Timesync, TrajectoryBezier, TrajectorySetpoint, VehicleAttitudeSetpoint, VehicleCommand, VehicleLocalPositionSetpoint, VehicleRatesSetpoint, VehicleTrajectoryBezier, VehicleTrajectoryWaypoint, VehicleMocapOdometry, VehicleVisualOdometry
+[1.557s] -- Retrieving list of msgs to receive...
+[1.608s] -- List of msgs to receive: CollisionConstraints, SensorCombined, Timesync, TimesyncStatus, TrajectoryWaypoint, VehicleControlMode, VehicleOdometry, VehicleStatus
+[1.675s] Error parsing '/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/package.xml':
+[1.774s] Traceback (most recent call last):
+[1.774s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>
+[1.774s]     main()
+[1.774s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main
+[1.774s]     raise e
+[1.774s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 48, in main
+[1.775s]     package = parse_package_string(
+[1.775s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[1.775s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[1.775s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/package.xml':
+[1.775s] Error(s):
+[1.775s] - The generic dependency on 'sensor_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+[1.809s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[1.809s]   execute_process(/usr/bin/python3
+[1.809s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.809s]   /home/jingyan/px4_ros_com_ros2/src/px4_ros_com/package.xml
+[1.809s]   /home/jingyan/px4_ros_com_ros2/build/px4_ros_com/ament_cmake_core/package.cmake)
+[1.809s]   returned error code 1
+[1.809s] Call Stack (most recent call first):
+[1.809s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.809s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[1.809s]   CMakeLists.txt:170 (ament_package)
+[1.809s] 
+[1.809s] 
+[1.813s] -- Configuring incomplete, errors occurred!
+[1.813s] See also "/home/jingyan/px4_ros_com_ros2/build/px4_ros_com/CMakeFiles/CMakeOutput.log".
+[1.813s] See also "/home/jingyan/px4_ros_com_ros2/build/px4_ros_com/CMakeFiles/CMakeError.log".
+[1.826s] make: *** [Makefile:3260: cmake_check_build_system] Error 1
+[1.830s] Invoked command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/px4_ros_com -- -j16 -l16

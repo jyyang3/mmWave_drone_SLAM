@@ -23,6 +23,7 @@ def generate_launch_description():
 
     
     #=====================声明三个节点，cartographer/occupancy_grid_node/rviz_node=================================
+
     cartographer_node = Node(
         package='cartographer_ros',
         executable='cartographer_node',

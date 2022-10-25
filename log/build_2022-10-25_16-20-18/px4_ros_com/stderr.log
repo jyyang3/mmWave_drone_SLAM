@@ -1,0 +1,7 @@
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:[m[K In lambda function:
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/Odom_transform.cpp:46:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _stamp_type = struct builtin_interfaces::msg::Time_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct builtin_interfaces::msg::Time_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstore[m[K’
+   46 |                     timestamp_.[01;31m[Kstore[m[K(_scan->header.stamp);
+      |                                [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/Odom_transform.dir/build.make:63: CMakeFiles/Odom_transform.dir/src/examples/offboard/Odom_transform.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:306: CMakeFiles/Odom_transform.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
