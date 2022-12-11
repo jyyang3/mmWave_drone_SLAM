@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.000275] (-) JobUnselected: {'identifier': 'fishbot_cartographer'}
+[0.000471] (-) JobUnselected: {'identifier': 'iwr6843aop_pub'}
+[0.000601] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.001080] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs')])}
+[0.001192] (px4_ros_com) JobStarted: {'identifier': 'px4_ros_com'}
+[0.016053] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'cmake'}
+[0.017580] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'build'}
+[0.018943] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com', '--', '-j16', '-l16'], 'cwd': '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jingyan'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1481'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/jingyan'), ('OLDPWD', '/home/jingyan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1130'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'jingyan'), ('JOURNAL_STREAM', '8:30518'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jingyan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/jingyan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jingyan-Lenovo-Legion-R7000-2020:@/tmp/.ICE-unix/1524,unix/jingyan-Lenovo-Legion-R7000-2020:/tmp/.ICE-unix/1524'), ('INVOCATION_ID', '3cbbc5175d624f00abcc20b49eaead23'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3c844c9c_252d_49e9_a98d_e6a06ff9f5ce'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy')]), 'shell': False}
+[0.080039] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target offboard_control\x1b[0m\n'}
+[0.099796] (-) TimerEvent: {}
+[0.103117] (px4_ros_com) StdoutLine: {'line': b'[  2%] Built target frame_transforms\n'}
+[0.105369] (px4_ros_com) StdoutLine: {'line': b'[  4%] Built target vehicle_gps_position_listener\n'}
+[0.106032] (px4_ros_com) StdoutLine: {'line': b'[  6%] Built target debug_vect_advertiser\n'}
+[0.109039] (px4_ros_com) StdoutLine: {'line': b'[  8%] Built target offboard_control_vel\n'}
+[0.113087] (px4_ros_com) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o\x1b[0m\n'}
+[0.113702] (px4_ros_com) StdoutLine: {'line': b'[ 11%] Built target sensor_combined_listener\n'}
+[0.114347] (px4_ros_com) StdoutLine: {'line': b'[ 12%] Built target Odom_transform\n'}
+[0.151879] (px4_ros_com) StdoutLine: {'line': b'[ 99%] Built target micrortps_agent\n'}
+[0.199888] (-) TimerEvent: {}
+[0.300183] (-) TimerEvent: {}
+[0.400497] (-) TimerEvent: {}
+[0.500818] (-) TimerEvent: {}
+[0.601142] (-) TimerEvent: {}
+[0.701543] (-) TimerEvent: {}
+[0.801869] (-) TimerEvent: {}
+[0.902175] (-) TimerEvent: {}
+[1.002456] (-) TimerEvent: {}
+[1.102748] (-) TimerEvent: {}
+[1.203033] (-) TimerEvent: {}
+[1.303328] (-) TimerEvent: {}
+[1.403640] (-) TimerEvent: {}
+[1.503947] (-) TimerEvent: {}
+[1.604245] (-) TimerEvent: {}
+[1.695543] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OffboardControl::OnVelVect(geometry_msgs::msg::Twist_<std::allocator<void> >::UniquePtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.695841] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:179:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a class, namespace, or enumeration\n'}
+[1.695933] (px4_ros_com) StderrLine: {'line': b'  179 |  OffboardControl::xv = -\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::linear::x;\n'}
+[1.696011] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.696083] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:180:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a class, namespace, or enumeration\n'}
+[1.696153] (px4_ros_com) StderrLine: {'line': b'  180 |  OffboardControl::yv = -\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::linear::y;\n'}
+[1.696239] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.696314] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:181:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a class, namespace, or enumeration\n'}
+[1.696390] (px4_ros_com) StderrLine: {'line': b'  181 |  OffboardControl::yawv = -\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::angular::z;\n'}
+[1.696468] (px4_ros_com) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.696576] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:177:76:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.696659] (px4_ros_com) StderrLine: {'line': b'  177 | void OffboardControl::OnVelVect(\x1b[01;35m\x1b[Kconst geometry_msgs::msg::Twist::UniquePtr msg\x1b[m\x1b[K) const\n'}
+[1.696741] (px4_ros_com) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.704351] (-) TimerEvent: {}
+[1.804668] (-) TimerEvent: {}
+[1.904944] (-) TimerEvent: {}
+[2.005233] (-) TimerEvent: {}
+[2.105544] (-) TimerEvent: {}
+[2.205855] (-) TimerEvent: {}
+[2.306175] (-) TimerEvent: {}
+[2.406540] (-) TimerEvent: {}
+[2.506862] (-) TimerEvent: {}
+[2.607207] (-) TimerEvent: {}
+[2.707519] (-) TimerEvent: {}
+[2.807870] (-) TimerEvent: {}
+[2.908279] (-) TimerEvent: {}
+[3.008684] (-) TimerEvent: {}
+[3.109072] (-) TimerEvent: {}
+[3.209462] (-) TimerEvent: {}
+[3.309850] (-) TimerEvent: {}
+[3.410243] (-) TimerEvent: {}
+[3.510569] (-) TimerEvent: {}
+[3.610967] (-) TimerEvent: {}
+[3.697470] (px4_ros_com) StderrLine: {'line': b'make[2]: *** [CMakeFiles/offboard_control.dir/build.make:63: CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o] Error 1\n'}
+[3.698102] (px4_ros_com) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:119: CMakeFiles/offboard_control.dir/all] Error 2\n'}
+[3.698372] (px4_ros_com) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[3.701424] (px4_ros_com) CommandEnded: {'returncode': 2}
+[3.711086] (-) TimerEvent: {}
+[3.811473] (-) TimerEvent: {}
+[3.911965] (-) TimerEvent: {}
+[4.000292] (px4_ros_com) JobEnded: {'identifier': 'px4_ros_com', 'rc': 2}
+[4.001375] (-) EventReactorShutdown: {}

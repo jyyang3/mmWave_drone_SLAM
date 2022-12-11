@@ -1,0 +1,34 @@
+[0.019s] Invoking command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/px4_ros_com -- -j16 -l16
+[0.086s] [35m[1mScanning dependencies of target offboard_control_absolute_version[0m
+[0.102s] [  2%] Built target sensor_combined_listener
+[0.103s] [  4%] Built target frame_transforms
+[0.103s] [  6%] Built target vehicle_gps_position_listener
+[0.105s] [ 10%] Built target offboard_control_vel
+[0.105s] [ 10%] Built target debug_vect_advertiser
+[0.107s] [ 12%] Built target offboard_control
+[0.113s] [ 13%] Built target Odom_transform
+[0.118s] [ 14%] [32mBuilding CXX object CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o[0m
+[0.144s] [ 99%] Built target micrortps_agent
+[1.854s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::OnVelVect(nav_msgs::msg::Path_<std::allocator<void> >::UniquePtr)[m[K’:
+[1.854s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:207:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _poses_type = class std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpose[m[K’
+[1.855s]   207 |  OffboardControl::xgoal = msg->poses.[01;31m[Kpose[m[K.position.y;
+[1.855s]       |                                      [01;31m[K^~~~[m[K
+[1.855s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:208:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _poses_type = class std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpose[m[K’
+[1.855s]   208 |  OffboardControl::ygoal = -msg->poses.[01;31m[Kpose[m[K.position.x;
+[1.855s]       |                                       [01;31m[K^~~~[m[K
+[1.855s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:210:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _poses_type = class std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpose[m[K’
+[1.856s]   210 |  goalQ[0] = msg->poses.[01;31m[Kpose[m[K.orientation.x;
+[1.856s]       |                        [01;31m[K^~~~[m[K
+[1.856s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:211:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _poses_type = class std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpose[m[K’
+[1.856s]   211 |  goalQ[1] = msg->poses.[01;31m[Kpose[m[K.orientation.y;
+[1.856s]       |                        [01;31m[K^~~~[m[K
+[1.856s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:212:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _poses_type = class std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpose[m[K’
+[1.857s]   212 |  goalQ[2] = msg->poses.[01;31m[Kpose[m[K.orientation.z;
+[1.857s]       |                        [01;31m[K^~~~[m[K
+[1.857s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:213:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _poses_type = class std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpose[m[K’
+[1.857s]   213 |  goalQ[3] = msg->poses.[01;31m[Kpose[m[K.orientation.w;
+[1.857s]       |                        [01;31m[K^~~~[m[K
+[4.094s] make[2]: *** [CMakeFiles/offboard_control_absolute_version.dir/build.make:63: CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o] Error 1
+[4.094s] make[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/offboard_control_absolute_version.dir/all] Error 2
+[4.094s] make: *** [Makefile:141: all] Error 2
+[4.098s] Invoked command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/px4_ros_com -- -j16 -l16

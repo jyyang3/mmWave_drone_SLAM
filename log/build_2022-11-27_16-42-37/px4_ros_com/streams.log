@@ -1,0 +1,19 @@
+[0.020s] Invoking command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/px4_ros_com -- -j16 -l16
+[0.090s] [35m[1mScanning dependencies of target offboard_control_absolute_version[0m
+[0.102s] [  4%] Built target frame_transforms
+[0.103s] [  4%] Built target debug_vect_advertiser
+[0.105s] [  6%] Built target offboard_control
+[0.105s] [  8%] Built target vehicle_gps_position_listener
+[0.106s] [ 10%] Built target sensor_combined_listener
+[0.109s] [ 11%] Built target Odom_transform
+[0.113s] [ 13%] Built target offboard_control_vel
+[0.120s] [ 14%] [32mBuilding CXX object CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o[0m
+[0.152s] [ 99%] Built target micrortps_agent
+[1.507s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl()[m[K’:
+[1.507s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:139:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_convert[m[K’ is not a member of ‘[01m[KOffboardControl[m[K’
+[1.507s]   139 |    std::bind(&OffboardControl::[01;31m[Kodom_convert[m[K, this, std::placeholders::_1));
+[1.507s]       |                                [01;31m[K^~~~~~~~~~~~[m[K
+[3.593s] make[2]: *** [CMakeFiles/offboard_control_absolute_version.dir/build.make:63: CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o] Error 1
+[3.593s] make[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/offboard_control_absolute_version.dir/all] Error 2
+[3.593s] make: *** [Makefile:141: all] Error 2
+[3.596s] Invoked command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/px4_ros_com -- -j16 -l16

@@ -246,6 +246,32 @@ sensor_combined_listener/fast:
 .PHONY : sensor_combined_listener/fast
 
 #=============================================================================
+# Target rules for targets named offboard_control_vel
+
+# Build rule for target.
+offboard_control_vel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 offboard_control_vel
+.PHONY : offboard_control_vel
+
+# fast build rule for target.
+offboard_control_vel/fast:
+	$(MAKE) -f CMakeFiles/offboard_control_vel.dir/build.make CMakeFiles/offboard_control_vel.dir/build
+.PHONY : offboard_control_vel/fast
+
+#=============================================================================
+# Target rules for targets named offboard_control_absolute_version
+
+# Build rule for target.
+offboard_control_absolute_version: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 offboard_control_absolute_version
+.PHONY : offboard_control_absolute_version
+
+# fast build rule for target.
+offboard_control_absolute_version/fast:
+	$(MAKE) -f CMakeFiles/offboard_control_absolute_version.dir/build.make CMakeFiles/offboard_control_absolute_version.dir/build
+.PHONY : offboard_control_absolute_version/fast
+
+#=============================================================================
 # Target rules for targets named uninstall
 
 # Build rule for target.
@@ -418,6 +444,60 @@ src/examples/offboard/offboard_control.s: src/examples/offboard/offboard_control
 src/examples/offboard/offboard_control.cpp.s:
 	$(MAKE) -f CMakeFiles/offboard_control.dir/build.make CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.s
 .PHONY : src/examples/offboard/offboard_control.cpp.s
+
+src/examples/offboard/offboard_control_absolute_version.o: src/examples/offboard/offboard_control_absolute_version.cpp.o
+
+.PHONY : src/examples/offboard/offboard_control_absolute_version.o
+
+# target to build an object file
+src/examples/offboard/offboard_control_absolute_version.cpp.o:
+	$(MAKE) -f CMakeFiles/offboard_control_absolute_version.dir/build.make CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o
+.PHONY : src/examples/offboard/offboard_control_absolute_version.cpp.o
+
+src/examples/offboard/offboard_control_absolute_version.i: src/examples/offboard/offboard_control_absolute_version.cpp.i
+
+.PHONY : src/examples/offboard/offboard_control_absolute_version.i
+
+# target to preprocess a source file
+src/examples/offboard/offboard_control_absolute_version.cpp.i:
+	$(MAKE) -f CMakeFiles/offboard_control_absolute_version.dir/build.make CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.i
+.PHONY : src/examples/offboard/offboard_control_absolute_version.cpp.i
+
+src/examples/offboard/offboard_control_absolute_version.s: src/examples/offboard/offboard_control_absolute_version.cpp.s
+
+.PHONY : src/examples/offboard/offboard_control_absolute_version.s
+
+# target to generate assembly for a file
+src/examples/offboard/offboard_control_absolute_version.cpp.s:
+	$(MAKE) -f CMakeFiles/offboard_control_absolute_version.dir/build.make CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.s
+.PHONY : src/examples/offboard/offboard_control_absolute_version.cpp.s
+
+src/examples/offboard/offboard_control_vel.o: src/examples/offboard/offboard_control_vel.cpp.o
+
+.PHONY : src/examples/offboard/offboard_control_vel.o
+
+# target to build an object file
+src/examples/offboard/offboard_control_vel.cpp.o:
+	$(MAKE) -f CMakeFiles/offboard_control_vel.dir/build.make CMakeFiles/offboard_control_vel.dir/src/examples/offboard/offboard_control_vel.cpp.o
+.PHONY : src/examples/offboard/offboard_control_vel.cpp.o
+
+src/examples/offboard/offboard_control_vel.i: src/examples/offboard/offboard_control_vel.cpp.i
+
+.PHONY : src/examples/offboard/offboard_control_vel.i
+
+# target to preprocess a source file
+src/examples/offboard/offboard_control_vel.cpp.i:
+	$(MAKE) -f CMakeFiles/offboard_control_vel.dir/build.make CMakeFiles/offboard_control_vel.dir/src/examples/offboard/offboard_control_vel.cpp.i
+.PHONY : src/examples/offboard/offboard_control_vel.cpp.i
+
+src/examples/offboard/offboard_control_vel.s: src/examples/offboard/offboard_control_vel.cpp.s
+
+.PHONY : src/examples/offboard/offboard_control_vel.s
+
+# target to generate assembly for a file
+src/examples/offboard/offboard_control_vel.cpp.s:
+	$(MAKE) -f CMakeFiles/offboard_control_vel.dir/build.make CMakeFiles/offboard_control_vel.dir/src/examples/offboard/offboard_control_vel.cpp.s
+.PHONY : src/examples/offboard/offboard_control_vel.cpp.s
 
 src/lib/frame_transforms.o: src/lib/frame_transforms.cpp.o
 
@@ -2938,19 +3018,21 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... frame_transforms"
 	@echo "... offboard_control"
-	@echo "... list_install_components"
 	@echo "... micrortps_agent"
 	@echo "... vehicle_gps_position_listener"
 	@echo "... debug_vect_advertiser"
 	@echo "... install/local"
 	@echo "... sensor_combined_listener"
+	@echo "... offboard_control_vel"
+	@echo "... offboard_control_absolute_version"
 	@echo "... uninstall"
 	@echo "... px4_ros_com_uninstall"
 	@echo "... test"
-	@echo "... Odom_transform"
 	@echo "... rebuild_cache"
+	@echo "... Odom_transform"
 	@echo "... edit_cache"
 	@echo "... src/examples/advertisers/debug_vect_advertiser.o"
 	@echo "... src/examples/advertisers/debug_vect_advertiser.i"
@@ -2967,6 +3049,12 @@ help:
 	@echo "... src/examples/offboard/offboard_control.o"
 	@echo "... src/examples/offboard/offboard_control.i"
 	@echo "... src/examples/offboard/offboard_control.s"
+	@echo "... src/examples/offboard/offboard_control_absolute_version.o"
+	@echo "... src/examples/offboard/offboard_control_absolute_version.i"
+	@echo "... src/examples/offboard/offboard_control_absolute_version.s"
+	@echo "... src/examples/offboard/offboard_control_vel.o"
+	@echo "... src/examples/offboard/offboard_control_vel.i"
+	@echo "... src/examples/offboard/offboard_control_vel.s"
 	@echo "... src/lib/frame_transforms.o"
 	@echo "... src/lib/frame_transforms.i"
 	@echo "... src/lib/frame_transforms.s"

@@ -1,0 +1,62 @@
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:116:2:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+  116 |  [01;31m[Ksubscription_[m[K = this->create_subscription<geometry_msgs::msg::Twist>(
+      |  [01;31m[K^~~~~~~~~~~~~[m[K
+      |  [32m[Krcl_subscription_t[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:136:38:[m[K [01;31m[Kerror: [m[K‘[01m[KDebugVect[m[K’ in namespace ‘[01m[Kpx4_msgs::msg[m[K’ does not name a type
+  136 |  void OnVelVect(const px4_msgs::msg::[01;31m[KDebugVect[m[K::UniquePtr msg);
+      |                                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:136:59:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+  136 |  void OnVelVect(const px4_msgs::msg::DebugVect::UniquePtr [01;31m[Kmsg[m[K);
+      |                                                           [01;31m[K^~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:136:58:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+  136 |  void OnVelVect[34m[K([m[Kconst px4_msgs::msg::DebugVect::UniquePtr[01;31m[K [m[K[32m[Kmsg[m[K);
+      |                [34m[K~[m[K                                         [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                          [32m[K)[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:136:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  136 |  void OnVelVect(const px4_msgs::msg::DebugVect::[01;31m[KUniquePtr[m[K msg);
+      |                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                          [32m[K;[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:136:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  136 |  void OnVelVect(const px4_msgs::msg::DebugVect::UniquePtr [01;31m[Kmsg[m[K);
+      |                                                           [01;31m[K^~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In lambda function:
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:100:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OffboardControl[m[K’ has no member named ‘[01m[Karm[m[K’
+  100 |     this->[01;31m[Karm[m[K();
+      |           [01;31m[K^~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K At global scope:
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:142:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid OffboardControl::arm() const[m[K’
+  142 | void [01;31m[KOffboardControl[m[K::arm() const
+      |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:142:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid OffboardControl::arm() const[m[K’
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:61:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass OffboardControl[m[K’ defined here
+   61 | class [01;36m[KOffboardControl[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:152:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid OffboardControl::disarm() const[m[K’
+  152 | void [01;31m[KOffboardControl[m[K::disarm() const
+      |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:152:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid OffboardControl::disarm() const[m[K’
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:61:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass OffboardControl[m[K’ defined here
+   61 | class [01;36m[KOffboardControl[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:175:54:[m[K [01;31m[Kerror: [m[K‘[01m[KDebugVect[m[K’ in namespace ‘[01m[Kpx4_msgs::msg[m[K’ does not name a type
+  175 | void OffboardControl::OnVelVect(const px4_msgs::msg::[01;31m[KDebugVect[m[K::UniquePtr msg)
+      |                                                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:175:75:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+  175 | void OffboardControl::OnVelVect(const px4_msgs::msg::DebugVect::UniquePtr [01;31m[Kmsg[m[K)
+      |                                                                           [01;31m[K^~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:175:74:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+  175 | void OffboardControl::OnVelVect[34m[K([m[Kconst px4_msgs::msg::DebugVect::UniquePtr[01;31m[K [m[K[32m[Kmsg[m[K)
+      |                                [34m[K~[m[K                                         [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                                          [32m[K)[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:175:75:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+  175 | void OffboardControl::OnVelVect(const px4_msgs::msg::DebugVect::UniquePtr [01;31m[Kmsg[m[K)
+      |                                                                           [01;31m[K^~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:182:12:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kvoid arm()[m[K’ cannot have cv-qualifier
+  182 | void arm() [01;31m[Kconst[m[K;
+      |            [01;31m[K^~~~~[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:183:15:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kvoid disarm()[m[K’ cannot have cv-qualifier
+  183 | void disarm() [01;31m[Kconst[m[K;
+      |               [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_control.dir/build.make:63: CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:119: CMakeFiles/offboard_control.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,36 @@
+[0.020s] Invoking command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/px4_ros_com -- -j16 -l16
+[0.084s] [35m[1mScanning dependencies of target offboard_control[0m
+[0.097s] [  2%] Built target frame_transforms
+[0.104s] [  4%] Built target vehicle_gps_position_listener
+[0.107s] [  6%] Built target sensor_combined_listener
+[0.107s] [  8%] Built target offboard_control_vel
+[0.108s] [ 11%] Built target Odom_transform
+[0.108s] [ 11%] Built target debug_vect_advertiser
+[0.112s] [ 12%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o[0m
+[0.140s] [ 99%] Built target micrortps_agent
+[1.524s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl()[m[K’:
+[1.524s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:137:15:[m[K [01;31m[Kerror: [m[K‘[01m[KPx4OdomTransform[m[K’ has not been declared
+[1.524s]   137 |    std::bind(&[01;31m[KPx4OdomTransform[m[K::odom_convert, this, std::placeholders::_1));
+[1.524s]       |               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.695s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K At global scope:
+[1.695s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:211:6:[m[K [01;31m[Kerror: [m[K‘[01m[KPx4OdomTransform[m[K’ has not been declared
+[1.696s]   211 | void [01;31m[KPx4OdomTransform[m[K::odom_convert(const px4_msgs::msg::VehicleOdometry::SharedPtr _msg)
+[1.696s]       |      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.698s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In function ‘[01m[Kvoid odom_convert(px4_msgs::msg::VehicleOdometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.698s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:224:7:[m[K [01;31m[Kerror: [m[K‘[01m[KMatrix3x3[m[K’ is not a member of ‘[01m[Ktf2[m[K’
+[1.698s]   224 |  tf2::[01;31m[KMatrix3x3[m[K m(q_final);
+[1.699s]       |       [01;31m[K^~~~~~~~~[m[K
+[1.699s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:226:2:[m[K [01;31m[Kerror: [m[K‘[01m[Km[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+[1.699s]   226 |  [01;31m[Km[m[K.getRPY(roll, pitch, yaw);
+[1.699s]       |  [01;31m[K^[m[K
+[1.699s]       |  [32m[Ktm[m[K
+[1.700s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:227:19:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KOffboardControl::CurrYaw[m[K’
+[1.700s]   227 |  OffboardControl::[01;31m[KCurrYaw[m[K = yaw;
+[1.700s]       |                   [01;31m[K^~~~~~~[m[K
+[1.700s] [01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:140:8:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.700s]   140 |  float [01;36m[KCurrYaw[m[K = 0.0;
+[1.700s]       |        [01;36m[K^~~~~~~[m[K
+[3.677s] make[2]: *** [CMakeFiles/offboard_control.dir/build.make:63: CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o] Error 1
+[3.677s] make[1]: *** [CMakeFiles/Makefile2:119: CMakeFiles/offboard_control.dir/all] Error 2
+[3.678s] make: *** [Makefile:141: all] Error 2
+[3.681s] Invoked command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/px4_ros_com -- -j16 -l16

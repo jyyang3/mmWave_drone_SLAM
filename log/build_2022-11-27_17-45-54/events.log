@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.001077] (-) JobUnselected: {'identifier': 'fishbot_cartographer'}
+[0.001155] (-) JobUnselected: {'identifier': 'fishbot_navigation2'}
+[0.001569] (-) JobUnselected: {'identifier': 'iwr6843aop_pub'}
+[0.001609] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.001645] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs')])}
+[0.001723] (px4_ros_com) JobStarted: {'identifier': 'px4_ros_com'}
+[0.014896] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'cmake'}
+[0.015862] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'build'}
+[0.016663] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com', '--', '-j16', '-l16'], 'cwd': '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jingyan'), ('LC_TIME', 'en_US.UTF-8'), ('SSH_AGENT_PID', '1476'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/jingyan'), ('OLDPWD', '/home/jingyan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '1123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'jingyan'), ('JOURNAL_STREAM', '8:37615'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jingyan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/jingyan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jingyan-Lenovo-Legion-R7000-2020:@/tmp/.ICE-unix/1519,unix/jingyan-Lenovo-Legion-R7000-2020:/tmp/.ICE-unix/1519'), ('INVOCATION_ID', 'fb102a4977ce46aea07f712818c252dd'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d67508c0_ecad_4271_a40a_62dd48aa7a80'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.390'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy')]), 'shell': False}
+[0.087763] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target offboard_control_absolute_version\x1b[0m\n'}
+[0.099710] (-) TimerEvent: {}
+[0.103159] (px4_ros_com) StdoutLine: {'line': b'[  2%] Built target sensor_combined_listener\n'}
+[0.104503] (px4_ros_com) StdoutLine: {'line': b'[  4%] Built target frame_transforms\n'}
+[0.104756] (px4_ros_com) StdoutLine: {'line': b'[  6%] Built target vehicle_gps_position_listener\n'}
+[0.106611] (px4_ros_com) StdoutLine: {'line': b'[ 10%] Built target offboard_control_vel\n'}
+[0.106794] (px4_ros_com) StdoutLine: {'line': b'[ 10%] Built target debug_vect_advertiser\n'}
+[0.108394] (px4_ros_com) StdoutLine: {'line': b'[ 12%] Built target offboard_control\n'}
+[0.114369] (px4_ros_com) StdoutLine: {'line': b'[ 13%] Built target Odom_transform\n'}
+[0.119757] (px4_ros_com) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o\x1b[0m\n'}
+[0.145641] (px4_ros_com) StdoutLine: {'line': b'[ 99%] Built target micrortps_agent\n'}
+[0.199825] (-) TimerEvent: {}
+[0.300158] (-) TimerEvent: {}
+[0.400493] (-) TimerEvent: {}
+[0.500825] (-) TimerEvent: {}
+[0.601151] (-) TimerEvent: {}
+[0.701466] (-) TimerEvent: {}
+[0.801738] (-) TimerEvent: {}
+[0.902047] (-) TimerEvent: {}
+[1.002419] (-) TimerEvent: {}
+[1.102760] (-) TimerEvent: {}
+[1.203098] (-) TimerEvent: {}
+[1.303482] (-) TimerEvent: {}
+[1.403844] (-) TimerEvent: {}
+[1.504206] (-) TimerEvent: {}
+[1.604545] (-) TimerEvent: {}
+[1.704854] (-) TimerEvent: {}
+[1.805149] (-) TimerEvent: {}
+[1.855374] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OffboardControl::OnVelVect(nav_msgs::msg::Path_<std::allocator<void> >::UniquePtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.855919] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:207:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _poses_type = class std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpose\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.856181] (px4_ros_com) StderrLine: {'line': b'  207 |  OffboardControl::xgoal = msg->poses.\x1b[01;31m\x1b[Kpose\x1b[m\x1b[K.position.y;\n'}
+[1.856379] (px4_ros_com) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.856577] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:208:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _poses_type = class std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpose\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.856769] (px4_ros_com) StderrLine: {'line': b'  208 |  OffboardControl::ygoal = -msg->poses.\x1b[01;31m\x1b[Kpose\x1b[m\x1b[K.position.x;\n'}
+[1.856926] (px4_ros_com) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.857055] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:210:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _poses_type = class std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpose\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.857204] (px4_ros_com) StderrLine: {'line': b'  210 |  goalQ[0] = msg->poses.\x1b[01;31m\x1b[Kpose\x1b[m\x1b[K.orientation.x;\n'}
+[1.857338] (px4_ros_com) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.857529] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:211:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _poses_type = class std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpose\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.857736] (px4_ros_com) StderrLine: {'line': b'  211 |  goalQ[1] = msg->poses.\x1b[01;31m\x1b[Kpose\x1b[m\x1b[K.orientation.y;\n'}
+[1.857872] (px4_ros_com) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.858000] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:212:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _poses_type = class std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpose\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.858151] (px4_ros_com) StderrLine: {'line': b'  212 |  goalQ[2] = msg->poses.\x1b[01;31m\x1b[Kpose\x1b[m\x1b[K.orientation.z;\n'}
+[1.858286] (px4_ros_com) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.858451] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:213:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _poses_type = class std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpose\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.858666] (px4_ros_com) StderrLine: {'line': b'  213 |  goalQ[3] = msg->poses.\x1b[01;31m\x1b[Kpose\x1b[m\x1b[K.orientation.w;\n'}
+[1.858821] (px4_ros_com) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.905262] (-) TimerEvent: {}
+[2.005608] (-) TimerEvent: {}
+[2.105922] (-) TimerEvent: {}
+[2.206280] (-) TimerEvent: {}
+[2.306659] (-) TimerEvent: {}
+[2.407005] (-) TimerEvent: {}
+[2.507343] (-) TimerEvent: {}
+[2.607726] (-) TimerEvent: {}
+[2.708222] (-) TimerEvent: {}
+[2.808704] (-) TimerEvent: {}
+[2.909112] (-) TimerEvent: {}
+[3.009403] (-) TimerEvent: {}
+[3.109686] (-) TimerEvent: {}
+[3.210002] (-) TimerEvent: {}
+[3.310389] (-) TimerEvent: {}
+[3.410778] (-) TimerEvent: {}
+[3.511128] (-) TimerEvent: {}
+[3.611532] (-) TimerEvent: {}
+[3.711876] (-) TimerEvent: {}
+[3.812187] (-) TimerEvent: {}
+[3.912552] (-) TimerEvent: {}
+[4.012944] (-) TimerEvent: {}
+[4.095448] (px4_ros_com) StderrLine: {'line': b'make[2]: *** [CMakeFiles/offboard_control_absolute_version.dir/build.make:63: CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o] Error 1\n'}
+[4.095792] (px4_ros_com) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/offboard_control_absolute_version.dir/all] Error 2\n'}
+[4.096016] (px4_ros_com) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[4.098574] (px4_ros_com) CommandEnded: {'returncode': 2}
+[4.113085] (-) TimerEvent: {}
+[4.213386] (-) TimerEvent: {}
+[4.313686] (-) TimerEvent: {}
+[4.414788] (-) TimerEvent: {}
+[4.419500] (px4_ros_com) JobEnded: {'identifier': 'px4_ros_com', 'rc': 2}
+[4.430528] (-) EventReactorShutdown: {}

@@ -1,0 +1,31 @@
+openjdk version "13.0.7" 2021-04-20
+OpenJDK Runtime Environment (build 13.0.7+5-Ubuntu-0ubuntu120.04)
+OpenJDK 64-Bit Server VM (build 13.0.7+5-Ubuntu-0ubuntu120.04, mixed mode)
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::OnVelVect(nav_msgs::msg::Path_<std::allocator<void> >::UniquePtr)[m[K’:
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:206:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct nav_msgs::msg::Path_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpose[m[K’; did you mean ‘[01m[Kposes[m[K’?
+  206 |  OffboardControl::xgoal = msg->[01;31m[Kpose[m[K.position[1];
+      |                                [01;31m[K^~~~[m[K
+      |                                [32m[Kposes[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:207:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct nav_msgs::msg::Path_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpose[m[K’; did you mean ‘[01m[Kposes[m[K’?
+  207 |  OffboardControl::ygoal = -msg->[01;31m[Kpose[m[K.position[0];
+      |                                 [01;31m[K^~~~[m[K
+      |                                 [32m[Kposes[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:209:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct nav_msgs::msg::Path_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpose[m[K’; did you mean ‘[01m[Kposes[m[K’?
+  209 |  goalQ[0] = msg->[01;31m[Kpose[m[K.orientation[0];
+      |                  [01;31m[K^~~~[m[K
+      |                  [32m[Kposes[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:210:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct nav_msgs::msg::Path_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpose[m[K’; did you mean ‘[01m[Kposes[m[K’?
+  210 |  goalQ[1] = msg->[01;31m[Kpose[m[K.orientation[1];
+      |                  [01;31m[K^~~~[m[K
+      |                  [32m[Kposes[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:211:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct nav_msgs::msg::Path_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpose[m[K’; did you mean ‘[01m[Kposes[m[K’?
+  211 |  goalQ[2] = msg->[01;31m[Kpose[m[K.orientation[2];
+      |                  [01;31m[K^~~~[m[K
+      |                  [32m[Kposes[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:212:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct nav_msgs::msg::Path_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kpose[m[K’; did you mean ‘[01m[Kposes[m[K’?
+  212 |  goalQ[3] = msg->[01;31m[Kpose[m[K.orientation[3];
+      |                  [01;31m[K^~~~[m[K
+      |                  [32m[Kposes[m[K
+make[2]: *** [CMakeFiles/offboard_control_absolute_version.dir/build.make:63: CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/offboard_control_absolute_version.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

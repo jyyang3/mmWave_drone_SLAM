@@ -1,3 +1,5 @@
+/home/jingyan/px4_ros_com_ros2/install/px4_ros_com/lib/px4_ros_com/offboard_control_vel
+/home/jingyan/px4_ros_com_ros2/install/px4_ros_com/lib/px4_ros_com/offboard_control_absolute_version
 /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/lib/libframe_transforms.so
 /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/bin/micrortps_agent
 /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/launch/odom.launch.py

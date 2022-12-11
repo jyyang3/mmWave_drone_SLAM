@@ -1,0 +1,29 @@
+[0.034s] Invoking command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/px4_ros_com -- -j16 -l16
+[0.139s] [35m[1mScanning dependencies of target Odom_transform[0m
+[0.166s] [  2%] Built target frame_transforms
+[0.169s] [  4%] Built target vehicle_gps_position_listener
+[0.169s] [  6%] Built target sensor_combined_listener
+[0.170s] [  8%] Built target offboard_control_vel
+[0.171s] [ 10%] Built target offboard_control_absolute_version
+[0.174s] [ 12%] Built target debug_vect_advertiser
+[0.175s] [ 14%] Built target offboard_control
+[0.182s] [ 14%] [32mBuilding CXX object CMakeFiles/Odom_transform.dir/src/examples/offboard/Odom_transform.cpp.o[0m
+[0.237s] [ 99%] Built target micrortps_agent
+[10.055s] [100%] [32m[1mLinking CXX executable Odom_transform[0m
+[10.538s] [100%] Built target Odom_transform
+[10.555s] Invoked command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jingyan/px4_ros_com_ros2/build/px4_ros_com -- -j16 -l16
+[10.835s] Invoking command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jingyan/px4_ros_com_ros2/build/px4_ros_com
+[10.842s] -- Install configuration: ""
+[10.844s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/lib/px4_ros_com/offboard_control_vel
+[10.844s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/lib/px4_ros_com/offboard_control_absolute_version
+[10.845s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/include/px4_ros_com
+[10.845s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/cmake
+[10.845s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/lib/libframe_transforms.so
+[10.845s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/bin/micrortps_agent
+[10.846s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/launch
+[10.846s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/launch/odom.launch.py
+[10.846s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/test
+[10.848s] -- Installing: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/package.dsv
+[10.848s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake
+[10.849s] -- Up-to-date: /home/jingyan/px4_ros_com_ros2/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake
+[10.852s] Invoked command in '/home/jingyan/px4_ros_com_ros2/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/px4_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jingyan/px4_ros_com_ros2/build/px4_ros_com

@@ -1,0 +1,15 @@
+openjdk version "13.0.7" 2021-04-20
+OpenJDK Runtime Environment (build 13.0.7+5-Ubuntu-0ubuntu120.04)
+OpenJDK 64-Bit Server VM (build 13.0.7+5-Ubuntu-0ubuntu120.04, mixed mode)
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_vel.cpp:[m[K In lambda function:
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_vel.cpp:115:8:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_setpoint_counter[m[K’ was not declared in this scope; did you mean ‘[01m[Koffboard_setpoint_counter_[m[K’?
+  115 |    if ([01;31m[Koffboard_setpoint_counter[m[K > 25 && offboard_setpoint_counter_ < 40)
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |        [32m[Koffboard_setpoint_counter_[m[K
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_vel.cpp:[m[K At global scope:
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_vel.cpp:191:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  191 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/offboard_control_vel.dir/build.make:63: CMakeFiles/offboard_control_vel.dir/src/examples/offboard/offboard_control_vel.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:254: CMakeFiles/offboard_control_vel.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

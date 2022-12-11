@@ -833,6 +833,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/vehicle_gps_position_listener.dir/DependInfo.cmake"
   "CMakeFiles/debug_vect_advertiser.dir/DependInfo.cmake"
   "CMakeFiles/sensor_combined_listener.dir/DependInfo.cmake"
+  "CMakeFiles/offboard_control_vel.dir/DependInfo.cmake"
+  "CMakeFiles/offboard_control_absolute_version.dir/DependInfo.cmake"
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/px4_ros_com_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/Odom_transform.dir/DependInfo.cmake"

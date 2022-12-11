@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o: in function `OffboardControl::OffboardControl()':
+/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:139: undefined reference to `OffboardControl::odom_convert(std::shared_ptr<px4_msgs::msg::VehicleOdometry_<std::allocator<void> > >)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/offboard_control_absolute_version.dir/build.make:181: offboard_control_absolute_version] Error 1
+make[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/offboard_control_absolute_version.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

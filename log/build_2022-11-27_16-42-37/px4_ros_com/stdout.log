@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target offboard_control_absolute_version[0m
+[  4%] Built target frame_transforms
+[  4%] Built target debug_vect_advertiser
+[  6%] Built target offboard_control
+[  8%] Built target vehicle_gps_position_listener
+[ 10%] Built target sensor_combined_listener
+[ 11%] Built target Odom_transform
+[ 13%] Built target offboard_control_vel
+[ 14%] [32mBuilding CXX object CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o[0m
+[ 99%] Built target micrortps_agent

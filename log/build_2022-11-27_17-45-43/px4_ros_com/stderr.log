@@ -1,0 +1,7 @@
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control_absolute_version.cpp:54:10:[m[K [01;31m[Kfatal error: [m[Knav2_msgs/msg/path.hpp: No such file or directory
+   54 | #include [01;31m[K<nav2_msgs/msg/path.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/offboard_control_absolute_version.dir/build.make:63: CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/offboard_control_absolute_version.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
