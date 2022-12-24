@@ -1,0 +1,43 @@
+[0.869s] Invoking command in '/home/jingyan/px4_ros_com_ros2/src/nav_goals': PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav_goals build --build-base /home/jingyan/px4_ros_com_ros2/build/nav_goals/build install --prefix /home/jingyan/px4_ros_com_ros2/install/nav_goals --record /home/jingyan/px4_ros_com_ros2/build/nav_goals/install.log --single-version-externally-managed
+[1.064s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:771: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.065s]   warnings.warn(
+[1.065s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:771: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[1.065s]   warnings.warn(
+[1.119s] running egg_info
+[1.119s] creating ../../build/nav_goals/nav_goals.egg-info
+[1.127s] writing ../../build/nav_goals/nav_goals.egg-info/PKG-INFO
+[1.127s] writing dependency_links to ../../build/nav_goals/nav_goals.egg-info/dependency_links.txt
+[1.128s] writing entry points to ../../build/nav_goals/nav_goals.egg-info/entry_points.txt
+[1.128s] writing requirements to ../../build/nav_goals/nav_goals.egg-info/requires.txt
+[1.128s] writing top-level names to ../../build/nav_goals/nav_goals.egg-info/top_level.txt
+[1.132s] writing manifest file '../../build/nav_goals/nav_goals.egg-info/SOURCES.txt'
+[1.150s] reading manifest file '../../build/nav_goals/nav_goals.egg-info/SOURCES.txt'
+[1.150s] writing manifest file '../../build/nav_goals/nav_goals.egg-info/SOURCES.txt'
+[1.150s] running build
+[1.150s] running build_py
+[1.150s] creating /home/jingyan/px4_ros_com_ros2/build/nav_goals/build
+[1.151s] creating /home/jingyan/px4_ros_com_ros2/build/nav_goals/build/lib
+[1.151s] creating /home/jingyan/px4_ros_com_ros2/build/nav_goals/build/lib/nav_goals
+[1.151s] copying nav_goals/nav.py -> /home/jingyan/px4_ros_com_ros2/build/nav_goals/build/lib/nav_goals
+[1.151s] copying nav_goals/__init__.py -> /home/jingyan/px4_ros_com_ros2/build/nav_goals/build/lib/nav_goals
+[1.151s] running install
+[1.152s] /usr/local/lib/python3.8/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.152s]   warnings.warn(
+[1.158s] running install_lib
+[1.167s] creating /home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/python3.8/site-packages/nav_goals
+[1.167s] copying /home/jingyan/px4_ros_com_ros2/build/nav_goals/build/lib/nav_goals/nav.py -> /home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/python3.8/site-packages/nav_goals
+[1.167s] copying /home/jingyan/px4_ros_com_ros2/build/nav_goals/build/lib/nav_goals/__init__.py -> /home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/python3.8/site-packages/nav_goals
+[1.167s] byte-compiling /home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/python3.8/site-packages/nav_goals/nav.py to nav.cpython-38.pyc
+[1.168s] byte-compiling /home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/python3.8/site-packages/nav_goals/__init__.py to __init__.cpython-38.pyc
+[1.168s] running install_data
+[1.177s] creating /home/jingyan/px4_ros_com_ros2/install/nav_goals/share/ament_index
+[1.177s] creating /home/jingyan/px4_ros_com_ros2/install/nav_goals/share/ament_index/resource_index
+[1.177s] creating /home/jingyan/px4_ros_com_ros2/install/nav_goals/share/ament_index/resource_index/packages
+[1.177s] copying resource/nav_goals -> /home/jingyan/px4_ros_com_ros2/install/nav_goals/share/ament_index/resource_index/packages
+[1.177s] copying package.xml -> /home/jingyan/px4_ros_com_ros2/install/nav_goals/share/nav_goals
+[1.177s] running install_egg_info
+[1.191s] Copying ../../build/nav_goals/nav_goals.egg-info to /home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/python3.8/site-packages/nav_goals-0.0.0-py3.8.egg-info
+[1.191s] running install_scripts
+[1.238s] Installing navigator script to /home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/nav_goals
+[1.238s] writing list of installed files to '/home/jingyan/px4_ros_com_ros2/build/nav_goals/install.log'
+[1.278s] Invoked command in '/home/jingyan/px4_ros_com_ros2/src/nav_goals' returned '0': PYTHONPATH=/home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav_goals build --build-base /home/jingyan/px4_ros_com_ros2/build/nav_goals/build install --prefix /home/jingyan/px4_ros_com_ros2/install/nav_goals --record /home/jingyan/px4_ros_com_ros2/build/nav_goals/install.log --single-version-externally-managed

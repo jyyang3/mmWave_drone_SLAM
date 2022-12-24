@@ -1,0 +1,4 @@
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_trajectory_setpoint() const[m[K’:
+[01m[K/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:246:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kvelcmd[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  246 |  float [01;35m[Kvelcmd[m[K = 0.0;
+      |        [01;35m[K^~~~~~[m[K

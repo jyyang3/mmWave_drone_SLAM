@@ -1,0 +1,29 @@
+/usr/local/lib/python3.8/dist-packages/setuptools/dist.py:771: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/setuptools/dist.py:771: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+  warnings.warn(
+running egg_info
+writing ../../build/nav_goals/nav_goals.egg-info/PKG-INFO
+writing dependency_links to ../../build/nav_goals/nav_goals.egg-info/dependency_links.txt
+writing entry points to ../../build/nav_goals/nav_goals.egg-info/entry_points.txt
+writing requirements to ../../build/nav_goals/nav_goals.egg-info/requires.txt
+writing top-level names to ../../build/nav_goals/nav_goals.egg-info/top_level.txt
+reading manifest file '../../build/nav_goals/nav_goals.egg-info/SOURCES.txt'
+writing manifest file '../../build/nav_goals/nav_goals.egg-info/SOURCES.txt'
+running build
+running build_py
+copying nav_goals/nav.py -> /home/jingyan/px4_ros_com_ros2/build/nav_goals/build/lib/nav_goals
+/usr/local/lib/python3.8/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install
+running install_lib
+copying /home/jingyan/px4_ros_com_ros2/build/nav_goals/build/lib/nav_goals/nav.py -> /home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/python3.8/site-packages/nav_goals
+byte-compiling /home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/python3.8/site-packages/nav_goals/nav.py to nav.cpython-38.pyc
+running install_data
+copying package.xml -> /home/jingyan/px4_ros_com_ros2/install/nav_goals/share/nav_goals
+running install_egg_info
+removing '/home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/python3.8/site-packages/nav_goals-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/nav_goals/nav_goals.egg-info to /home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/python3.8/site-packages/nav_goals-0.0.0-py3.8.egg-info
+running install_scripts
+Installing navigator script to /home/jingyan/px4_ros_com_ros2/install/nav_goals/lib/nav_goals
+writing list of installed files to '/home/jingyan/px4_ros_com_ros2/build/nav_goals/install.log'

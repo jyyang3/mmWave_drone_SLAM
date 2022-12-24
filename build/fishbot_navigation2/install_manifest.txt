@@ -5,6 +5,8 @@
 /home/jingyan/px4_ros_com_ros2/install/fishbot_navigation2/share/fishbot_navigation2/maps/square_map.yaml
 /home/jingyan/px4_ros_com_ros2/install/fishbot_navigation2/share/fishbot_navigation2/maps/square_map.pgm
 /home/jingyan/px4_ros_com_ros2/install/fishbot_navigation2/share/fishbot_navigation2/maps/fishbot_map.pgm
+/home/jingyan/px4_ros_com_ros2/install/fishbot_navigation2/share/fishbot_navigation2/maps/indoor_map.pgm
+/home/jingyan/px4_ros_com_ros2/install/fishbot_navigation2/share/fishbot_navigation2/maps/indoor_map.yaml
 /home/jingyan/px4_ros_com_ros2/install/fishbot_navigation2/share/ament_index/resource_index/package_run_dependencies/fishbot_navigation2
 /home/jingyan/px4_ros_com_ros2/install/fishbot_navigation2/share/ament_index/resource_index/parent_prefix_path/fishbot_navigation2
 /home/jingyan/px4_ros_com_ros2/install/fishbot_navigation2/share/fishbot_navigation2/environment/ament_prefix_path.sh
