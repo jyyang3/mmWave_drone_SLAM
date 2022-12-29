@@ -90,6 +90,28 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -112,28 +134,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,6 +166,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named Odom_transform
+
+# Build rule for target.
+Odom_transform: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Odom_transform
+.PHONY : Odom_transform
+
+# fast build rule for target.
+Odom_transform/fast:
+	$(MAKE) -f CMakeFiles/Odom_transform.dir/build.make CMakeFiles/Odom_transform.dir/build
+.PHONY : Odom_transform/fast
 
 #=============================================================================
 # Target rules for targets named frame_transforms
@@ -298,17 +311,17 @@ px4_ros_com_uninstall/fast:
 .PHONY : px4_ros_com_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named Odom_transform
+# Target rules for targets named offboard_simple
 
 # Build rule for target.
-Odom_transform: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Odom_transform
-.PHONY : Odom_transform
+offboard_simple: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 offboard_simple
+.PHONY : offboard_simple
 
 # fast build rule for target.
-Odom_transform/fast:
-	$(MAKE) -f CMakeFiles/Odom_transform.dir/build.make CMakeFiles/Odom_transform.dir/build
-.PHONY : Odom_transform/fast
+offboard_simple/fast:
+	$(MAKE) -f CMakeFiles/offboard_simple.dir/build.make CMakeFiles/offboard_simple.dir/build
+.PHONY : offboard_simple/fast
 
 src/examples/advertisers/debug_vect_advertiser.o: src/examples/advertisers/debug_vect_advertiser.cpp.o
 
@@ -498,6 +511,33 @@ src/examples/offboard/offboard_control_vel.s: src/examples/offboard/offboard_con
 src/examples/offboard/offboard_control_vel.cpp.s:
 	$(MAKE) -f CMakeFiles/offboard_control_vel.dir/build.make CMakeFiles/offboard_control_vel.dir/src/examples/offboard/offboard_control_vel.cpp.s
 .PHONY : src/examples/offboard/offboard_control_vel.cpp.s
+
+src/examples/offboard/offboard_simple.o: src/examples/offboard/offboard_simple.cpp.o
+
+.PHONY : src/examples/offboard/offboard_simple.o
+
+# target to build an object file
+src/examples/offboard/offboard_simple.cpp.o:
+	$(MAKE) -f CMakeFiles/offboard_simple.dir/build.make CMakeFiles/offboard_simple.dir/src/examples/offboard/offboard_simple.cpp.o
+.PHONY : src/examples/offboard/offboard_simple.cpp.o
+
+src/examples/offboard/offboard_simple.i: src/examples/offboard/offboard_simple.cpp.i
+
+.PHONY : src/examples/offboard/offboard_simple.i
+
+# target to preprocess a source file
+src/examples/offboard/offboard_simple.cpp.i:
+	$(MAKE) -f CMakeFiles/offboard_simple.dir/build.make CMakeFiles/offboard_simple.dir/src/examples/offboard/offboard_simple.cpp.i
+.PHONY : src/examples/offboard/offboard_simple.cpp.i
+
+src/examples/offboard/offboard_simple.s: src/examples/offboard/offboard_simple.cpp.s
+
+.PHONY : src/examples/offboard/offboard_simple.s
+
+# target to generate assembly for a file
+src/examples/offboard/offboard_simple.cpp.s:
+	$(MAKE) -f CMakeFiles/offboard_simple.dir/build.make CMakeFiles/offboard_simple.dir/src/examples/offboard/offboard_simple.cpp.s
+.PHONY : src/examples/offboard/offboard_simple.cpp.s
 
 src/lib/frame_transforms.o: src/lib/frame_transforms.cpp.o
 
@@ -3019,6 +3059,9 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... Odom_transform"
 	@echo "... frame_transforms"
 	@echo "... offboard_control"
 	@echo "... micrortps_agent"
@@ -3031,9 +3074,7 @@ help:
 	@echo "... uninstall"
 	@echo "... px4_ros_com_uninstall"
 	@echo "... test"
-	@echo "... rebuild_cache"
-	@echo "... Odom_transform"
-	@echo "... edit_cache"
+	@echo "... offboard_simple"
 	@echo "... src/examples/advertisers/debug_vect_advertiser.o"
 	@echo "... src/examples/advertisers/debug_vect_advertiser.i"
 	@echo "... src/examples/advertisers/debug_vect_advertiser.s"
@@ -3055,6 +3096,9 @@ help:
 	@echo "... src/examples/offboard/offboard_control_vel.o"
 	@echo "... src/examples/offboard/offboard_control_vel.i"
 	@echo "... src/examples/offboard/offboard_control_vel.s"
+	@echo "... src/examples/offboard/offboard_simple.o"
+	@echo "... src/examples/offboard/offboard_simple.i"
+	@echo "... src/examples/offboard/offboard_simple.s"
 	@echo "... src/lib/frame_transforms.o"
 	@echo "... src/lib/frame_transforms.i"
 	@echo "... src/lib/frame_transforms.s"
