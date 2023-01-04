@@ -1,0 +1,8 @@
+source;share/mmwave_drone_cartographer/hook/cmake_prefix_path.ps1
+source;share/mmwave_drone_cartographer/hook/cmake_prefix_path.dsv
+source;share/mmwave_drone_cartographer/hook/cmake_prefix_path.sh
+source;share/mmwave_drone_cartographer/local_setup.bash
+source;share/mmwave_drone_cartographer/local_setup.dsv
+source;share/mmwave_drone_cartographer/local_setup.ps1
+source;share/mmwave_drone_cartographer/local_setup.sh
+source;share/mmwave_drone_cartographer/local_setup.zsh

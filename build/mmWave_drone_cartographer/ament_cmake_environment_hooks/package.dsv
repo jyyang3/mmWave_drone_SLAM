@@ -1,0 +1,4 @@
+source;share/mmWave_drone_cartographer/local_setup.bash
+source;share/mmWave_drone_cartographer/local_setup.dsv
+source;share/mmWave_drone_cartographer/local_setup.sh
+source;share/mmWave_drone_cartographer/local_setup.zsh

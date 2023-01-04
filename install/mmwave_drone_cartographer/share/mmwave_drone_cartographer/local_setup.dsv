@@ -1,0 +1,2 @@
+source;share/mmwave_drone_cartographer/environment/ament_prefix_path.sh
+source;share/mmwave_drone_cartographer/environment/path.sh

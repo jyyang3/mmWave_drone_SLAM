@@ -1,0 +1,4 @@
+source;share/mmwave_drone_navigation2/local_setup.bash
+source;share/mmwave_drone_navigation2/local_setup.dsv
+source;share/mmwave_drone_navigation2/local_setup.sh
+source;share/mmwave_drone_navigation2/local_setup.zsh
