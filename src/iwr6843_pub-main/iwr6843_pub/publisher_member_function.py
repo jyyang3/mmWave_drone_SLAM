@@ -275,9 +275,9 @@ class Detected_Points:
                 warn+=1
             else:
                 warn=0
-            if(warn>100):#连续10次空读取则退出 / after 10 empty frames
-                print("Wrong")
-                break
+            #if(warn>100):#连续10次空读取则退出 / after 10 empty frames
+            #    print("Wrong")
+            #    break
         
             data+=byte_buffer
         

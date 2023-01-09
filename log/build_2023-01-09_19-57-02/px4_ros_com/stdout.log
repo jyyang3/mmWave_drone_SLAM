@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target Odom_transform_real[0m
+[  2%] Built target frame_transforms
+[  3%] Built target offboard_control_absolute_version
+[  5%] Built target debug_vect_advertiser
+[  7%] Built target offboard_control_vel
+[ 11%] Built target Odom_transform
+[ 11%] Built target sensor_combined_listener
+[ 12%] Built target vehicle_gps_position_listener
+[ 14%] Built target offboard_simple
+[ 16%] Built target offboard_control
+[ 17%] [32mBuilding CXX object CMakeFiles/Odom_transform_real.dir/src/examples/offboard/Odom_transform_real.cpp.o[0m
+[ 99%] Built target micrortps_agent

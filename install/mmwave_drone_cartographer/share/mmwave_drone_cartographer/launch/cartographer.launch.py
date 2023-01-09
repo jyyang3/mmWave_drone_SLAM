@@ -7,7 +7,7 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     # 定位到功能包的地址
-    pkg_share = FindPackageShare(package='fishbot_cartographer').find('fishbot_cartographer')
+    pkg_share = FindPackageShare(package='mmwave_drone_cartographer').find('mmwave_drone_cartographer')
     
     #=====================运行节点需要的配置=======================================================================
     # 是否使用仿真时间，我们用gazebo，这里设置成true

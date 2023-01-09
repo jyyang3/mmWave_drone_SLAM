@@ -84,7 +84,7 @@ void Px4OdomTransform::odom_convert(const px4_msgs::msg::VehicleOdometry::Shared
 
 	auto odom_msg = nav_msgs::msg::Odometry();
 	odom_msg.header = std_msgs::msg::Header();
-	odom_msg.header.stamp = timestamp_; // _scan->header.stamp; // this->get_clock()->now();
+	odom_msg.header.stamp = this->get_clock()->now(); // timestamp_; // _scan->header.stamp; // this->get_clock()->now();
 	std::string frameID = "odom";
 	std::string childID = "base_footprint";
 	odom_msg.header.frame_id = frameID;
@@ -146,7 +146,7 @@ void Px4OdomTransform::odom_convert(const px4_msgs::msg::VehicleOdometry::Shared
 								 0.0, 0.0, 0.0, 0.0, 0.0, 1.0};
 	geometry_msgs::msg::TransformStamped t;
 
-	t.header.stamp = timestamp_; //_scan->header.stamp; // this->get_clock()->now();
+	t.header.stamp = this->get_clock()->now(); // timestamp_; //_scan->header.stamp; // this->get_clock()->now();
 	t.header.frame_id = "odom";
 	t.child_frame_id = "base_footprint";
 	// t.transform.translation.x = _msg->position[1];
@@ -172,7 +172,7 @@ void Px4OdomTransform::odom_convert(const px4_msgs::msg::VehicleOdometry::Shared
 
 	geometry_msgs::msg::TransformStamped t_footprint;
 
-	t_footprint.header.stamp = timestamp_; //_scan->header.stamp; // this->get_clock()->now();
+	t_footprint.header.stamp = this->get_clock()->now(); // timestamp_; //_scan->header.stamp; // this->get_clock()->now();
 	t_footprint.header.frame_id = "base_footprint";
 	t_footprint.child_frame_id = "base_link";
 	t_footprint.transform.translation.x = 0.0;
@@ -187,9 +187,9 @@ void Px4OdomTransform::odom_convert(const px4_msgs::msg::VehicleOdometry::Shared
 
 	geometry_msgs::msg::TransformStamped t_baselink;
 
-	t_baselink.header.stamp = timestamp_; //_scan->header.stamp; // this->get_clock()->now();
+	t_baselink.header.stamp = this->get_clock()->now(); // timestamp_; //_scan->header.stamp; // this->get_clock()->now();
 	t_baselink.header.frame_id = "base_link";
-	t_baselink.child_frame_id = "iwr6843_frame";
+	t_baselink.child_frame_id = "laser_link";
 	t_baselink.transform.translation.x = 0.0;
 	t_baselink.transform.translation.y = 0.0;
 	t_baselink.transform.translation.z = 0.01;

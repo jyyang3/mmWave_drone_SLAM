@@ -34,8 +34,8 @@ MAGIC_WORD = b'\x02\x01\x04\x03\x06\x05\x08\x07'
 MSG_AZIMUT_STATIC_HEAT_MAP = 8
 ms_per_frame = 9999.0
 default_cfg = os.path.dirname(os.path.realpath(__file__)).replace("install/iwr6843aop_pub/lib/python3.8/site-packages/iwr6843aop_pub", "/src/iwr6843aop_pub-main/cfg_files") + "/" + "yang2d.cfg"
-data_port = '/dev/ttyUSB1'
-cli_port = '/dev/ttyUSB0'
+data_port = '/dev/ttyUSB2'
+cli_port = '/dev/ttyUSB1'
 
 
 class TI:
@@ -275,9 +275,9 @@ class Detected_Points:
                 warn+=1
             else:
                 warn=0
-            if(warn>100):#连续10次空读取则退出 / after 10 empty frames
-                print("Wrong")
-                break
+            #if(warn>100):#连续10次空读取则退出 / after 10 empty frames
+            #    print("Wrong")
+            #    break
         
             data+=byte_buffer
         
