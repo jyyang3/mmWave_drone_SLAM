@@ -1,9 +1,0 @@
-[  2%] Built target vehicle_gps_position_listener
-[  6%] Built target offboard_control_vel
-[  6%] Built target frame_transforms
-[  8%] Built target sensor_combined_listener
-[ 10%] Built target debug_vect_advertiser
-[ 13%] [32mBuilding CXX object CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o[0m
-[ 13%] Built target Odom_transform
-[ 14%] Built target offboard_control
-[ 99%] Built target micrortps_agent

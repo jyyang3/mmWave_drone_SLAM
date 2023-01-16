@@ -1,7 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000359] (-) JobUnselected: {'identifier': 'fishbot_cartographer'}
-[0.000423] (-) JobUnselected: {'identifier': 'fishbot_navigation2'}
-[0.000467] (-) JobUnselected: {'identifier': 'iwr6843aop_pub'}
-[0.000509] (-) JobUnselected: {'identifier': 'px4_msgs'}
-[0.000548] (-) JobUnselected: {'identifier': 'px4_ros_com'}
-[0.000588] (-) EventReactorShutdown: {}
