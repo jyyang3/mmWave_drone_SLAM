@@ -40,3 +40,4 @@ run radar pointcloud publisher: ros2 run iwr6843_pub pcl_pub(the frame for point
 
 give navigation2 goals:ros2 run nav_goals navigator
 
+3nodes_setup.sh: sh script for micrortps bridge, odom transform and mmWave radar interface.

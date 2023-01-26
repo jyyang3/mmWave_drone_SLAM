@@ -94,7 +94,7 @@ void Px4OdomTransform::odom_convert(const px4_msgs::msg::VehicleOdometry::Shared
 	// odom_msg.pose.pose.position.z = -_msg->position[2];
 	odom_msg.pose.pose.position.x = _msg->position[1];
 	odom_msg.pose.pose.position.y = _msg->position[0];
-	odom_msg.pose.pose.position.z = -_msg->position[2]; // baidalan
+	odom_msg.pose.pose.position.z = -_msg->position[2]; // Not considering rotation
 	// odom_msg.pose.pose.orientation.x = _msg->q[1];
 	// odom_msg.pose.pose.orientation.y = _msg->q[0];
 	// odom_msg.pose.pose.orientation.z = -_msg->q[2];

@@ -34,12 +34,12 @@ MAGIC_WORD = b'\x02\x01\x04\x03\x06\x05\x08\x07'
 MSG_AZIMUT_STATIC_HEAT_MAP = 8
 ms_per_frame = 9999.0
 default_cfg = os.path.dirname(os.path.realpath(__file__)).replace("install/iwr6843aop_pub/lib/python3.8/site-packages/iwr6843aop_pub", "/src/iwr6843aop_pub-main/cfg_files") + "/" + "yang2d.cfg"
-data_port = '/dev/ttyUSB2'
-cli_port = '/dev/ttyUSB1'
+data_port = '/dev/Radar1'
+cli_port = '/dev/Radar2'
 
 
 class TI:
-    def __init__(self, sdk_version=3.6,  cli_baud=115200,data_baud=921600, num_rx=4, num_tx=2,
+    def __init__(self, sdk_version=3.6,  cli_baud=115200,data_baud=921600, num_rx=4, num_tx=3,
                  verbose=False, connect=True, mode=0,cli_loc='COM4',data_loc='COM3'):
         super(TI, self).__init__()
         self.connected = False
@@ -81,7 +81,7 @@ class TI:
 
             # Hard code the number of antennas, change if other configuration is used
             num_rx_ant = 4
-            num_tx_ant = 2
+            num_tx_ant = 3
 
             # Get the information about the profile configuration
             if "profileCfg" in split_words[0]:
@@ -189,7 +189,7 @@ class TI:
    
     def _process_azimut_heat_map(self, byte_buffer):
             """
-            热图
+            heatmap
             """
             idx = byte_buffer.index(MAGIC_WORD)
             header_data, idx = self._parse_header_data(byte_buffer, idx)    
@@ -206,7 +206,7 @@ class TI:
 
     def _process_detected_points(self, byte_buffer):
             """
-            点云
+            pointcloud
             """
             idx = byte_buffer.index(MAGIC_WORD)
             header_data, idx = self._parse_header_data(byte_buffer, idx)    
@@ -275,7 +275,7 @@ class Detected_Points:
                 warn+=1
             else:
                 warn=0
-            #if(warn>100):#连续10次空读取则退出 / after 10 empty frames
+            #if(warn>100):#error after 10 empty frames
             #    print("Wrong")
             #    break
         
@@ -326,7 +326,7 @@ class MinimalPublisher(Node):
             pcl_msg = PointCloud2()
             pcl_msg.header = std_msgs.msg.Header()
             pcl_msg.header.stamp = self.get_clock().now().to_msg()
-            pcl_msg.header.frame_id = 'iwr6843_frame'
+            pcl_msg.header.frame_id = 'laser_link'
             pcl_msg.height = 1 # because unordered cloud
             pcl_msg.width = cloud_arr.shape[0] # number of points in cloud
             # define interpretation of pointcloud message (offset is in bytes, float32 is 4 bytes)
