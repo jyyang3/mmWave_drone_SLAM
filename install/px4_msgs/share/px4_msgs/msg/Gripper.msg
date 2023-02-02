@@ -1,1 +1,7 @@
-/home/jingyan/px4_ros_com_ros2/src/px4_msgs/msg/Gripper.msg
+## Used to command an actuation in the gripper, which is mapped to a specific output in the mixer module
+
+uint64 timestamp
+
+int8 command		# Commanded state for the gripper
+int8 COMMAND_GRAB = 0
+int8 COMMAND_RELEASE = 1

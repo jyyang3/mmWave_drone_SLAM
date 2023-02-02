@@ -6,23 +6,16 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
-    # 定位到功能包的地址
     pkg_share = FindPackageShare(package='mmwave_drone_cartographer').find('mmwave_drone_cartographer')
     
-    #=====================运行节点需要的配置=======================================================================
-    # 是否使用仿真时间，我们用gazebo，这里设置成true
-    use_sim_time = LaunchConfiguration('use_sim_time', default='true')
-    # 地图的分辨率
-    resolution = LaunchConfiguration('resolution', default='0.05')
-    # 地图的发布周期
-    publish_period_sec = LaunchConfiguration('publish_period_sec', default='1.0')
-    # 配置文件夹路径
-    configuration_directory = LaunchConfiguration('configuration_directory',default= os.path.join(pkg_share, 'config') )
-    # 配置文件
-    configuration_basename = LaunchConfiguration('configuration_basename', default='with_odometry_2d.lua')
 
-    
-    #=====================声明三个节点，cartographer/occupancy_grid_node/rviz_node=================================
+    use_sim_time = LaunchConfiguration('use_sim_time', default='true')# true for simulation and rosbag files, false for real setup
+    resolution = LaunchConfiguration('resolution', default='0.05')
+    publish_period_sec = LaunchConfiguration('publish_period_sec', default='1.0')
+    configuration_directory = LaunchConfiguration('configuration_directory',default= os.path.join(pkg_share, 'config') )
+    configuration_basename = LaunchConfiguration('configuration_basename', default='simulated_drone_config.lua')
+
+   
 
     cartographer_node = Node(
         package='cartographer_ros',
@@ -47,9 +40,8 @@ def generate_launch_description():
         name='rviz2',
         # arguments=['-d', rviz_config_dir],
         parameters=[{'use_sim_time': use_sim_time}],
-        output='screen')
+        output='screen')# not used in raspi
 
-    #===============================================定义启动文件========================================================
     ld = LaunchDescription()
     ld.add_action(cartographer_node)
     ld.add_action(occupancy_grid_node)

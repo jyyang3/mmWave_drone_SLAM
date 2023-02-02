@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jingyan/px4_ros_com_ros2/src/px4_ros_com
+CMAKE_SOURCE_DIR = /home/jingyan/mmWave_drone_SLAM/src/px4_ros_com
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jingyan/px4_ros_com_ros2/build/px4_ros_com
+CMAKE_BINARY_DIR = /home/jingyan/mmWave_drone_SLAM/build/px4_ros_com
 
 # Utility rule file for px4_ros_com_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/jingyan/px4_ros_com_ros2/build/px4_ros_com
 include CMakeFiles/px4_ros_com_uninstall.dir/progress.make
 
 CMakeFiles/px4_ros_com_uninstall:
-	/usr/bin/cmake -P /home/jingyan/px4_ros_com_ros2/build/px4_ros_com/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/jingyan/mmWave_drone_SLAM/build/px4_ros_com/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 px4_ros_com_uninstall: CMakeFiles/px4_ros_com_uninstall
 px4_ros_com_uninstall: CMakeFiles/px4_ros_com_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/px4_ros_com_uninstall.dir/clean:
 .PHONY : CMakeFiles/px4_ros_com_uninstall.dir/clean
 
 CMakeFiles/px4_ros_com_uninstall.dir/depend:
-	cd /home/jingyan/px4_ros_com_ros2/build/px4_ros_com && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jingyan/px4_ros_com_ros2/src/px4_ros_com /home/jingyan/px4_ros_com_ros2/src/px4_ros_com /home/jingyan/px4_ros_com_ros2/build/px4_ros_com /home/jingyan/px4_ros_com_ros2/build/px4_ros_com /home/jingyan/px4_ros_com_ros2/build/px4_ros_com/CMakeFiles/px4_ros_com_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jingyan/mmWave_drone_SLAM/build/px4_ros_com && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jingyan/mmWave_drone_SLAM/src/px4_ros_com /home/jingyan/mmWave_drone_SLAM/src/px4_ros_com /home/jingyan/mmWave_drone_SLAM/build/px4_ros_com /home/jingyan/mmWave_drone_SLAM/build/px4_ros_com /home/jingyan/mmWave_drone_SLAM/build/px4_ros_com/CMakeFiles/px4_ros_com_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/px4_ros_com_uninstall.dir/depend
 

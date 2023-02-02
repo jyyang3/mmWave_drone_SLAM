@@ -1,1 +1,12 @@
-/home/jingyan/px4_ros_com_ros2/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/estimator_wind.h
+// generated from rosidl_generator_c/resource/idl.h.em
+// with input from px4_msgs:msg/EstimatorWind.idl
+// generated code does not contain a copyright notice
+
+#ifndef PX4_MSGS__MSG__ESTIMATOR_WIND_H_
+#define PX4_MSGS__MSG__ESTIMATOR_WIND_H_
+
+#include "px4_msgs/msg/detail/estimator_wind__struct.h"
+#include "px4_msgs/msg/detail/estimator_wind__functions.h"
+#include "px4_msgs/msg/detail/estimator_wind__type_support.h"
+
+#endif  // PX4_MSGS__MSG__ESTIMATOR_WIND_H_

@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -Wextra -Wpedantic   -g3 -std=gnu++17
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_DEFAULT_API=1 -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -I/home/jingyan/px4_ros_com_ros2/src/px4_ros_com/include -isystem /home/jingyan/px4_ros_com_ros2/install/px4_msgs/include -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/jingyan/mmWave_drone_SLAM/src/px4_ros_com/include -isystem /home/jingyan/mmWave_drone_SLAM/install/px4_msgs/include -isystem /opt/ros/foxy/include 
 

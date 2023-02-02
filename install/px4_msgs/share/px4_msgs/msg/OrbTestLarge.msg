@@ -1,1 +1,5 @@
-/home/jingyan/px4_ros_com_ros2/src/px4_msgs/msg/OrbTestLarge.msg
+uint64 timestamp		# time since system start (microseconds)
+
+int32 val
+
+uint8[512] junk

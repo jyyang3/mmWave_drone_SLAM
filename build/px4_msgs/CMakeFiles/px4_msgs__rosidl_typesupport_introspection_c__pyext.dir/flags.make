@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -Wextra
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"px4_msgs\" -Dpx4_msgs__rosidl_typesupport_introspection_c__pyext_EXPORTS
 
-C_INCLUDES = -I/home/jingyan/px4_ros_com_ros2/build/px4_msgs/rosidl_generator_c -I/home/jingyan/px4_ros_com_ros2/build/px4_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/jingyan/px4_ros_com_ros2/build/px4_msgs/rosidl_typesupport_c -I/home/jingyan/px4_ros_com_ros2/build/px4_msgs/rosidl_typesupport_introspection_c -isystem /opt/ros/foxy/include 
+C_INCLUDES = -I/home/jingyan/mmWave_drone_SLAM/build/px4_msgs/rosidl_generator_c -I/home/jingyan/mmWave_drone_SLAM/build/px4_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/jingyan/mmWave_drone_SLAM/build/px4_msgs/rosidl_typesupport_c -I/home/jingyan/mmWave_drone_SLAM/build/px4_msgs/rosidl_typesupport_introspection_c -isystem /opt/ros/foxy/include 
 

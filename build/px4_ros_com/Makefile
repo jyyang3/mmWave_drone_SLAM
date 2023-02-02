@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jingyan/px4_ros_com_ros2/src/px4_ros_com
+CMAKE_SOURCE_DIR = /home/jingyan/mmWave_drone_SLAM/src/px4_ros_com
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jingyan/px4_ros_com_ros2/build/px4_ros_com
+CMAKE_BINARY_DIR = /home/jingyan/mmWave_drone_SLAM/build/px4_ros_com
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -90,17 +90,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -112,6 +101,17 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -137,9 +137,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jingyan/px4_ros_com_ros2/build/px4_ros_com/CMakeFiles /home/jingyan/px4_ros_com_ros2/build/px4_ros_com/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jingyan/mmWave_drone_SLAM/build/px4_ros_com/CMakeFiles /home/jingyan/mmWave_drone_SLAM/build/px4_ros_com/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jingyan/px4_ros_com_ros2/build/px4_ros_com/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jingyan/mmWave_drone_SLAM/build/px4_ros_com/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -166,32 +166,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named uninstall
-
-# Build rule for target.
-uninstall: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 uninstall
-.PHONY : uninstall
-
-# fast build rule for target.
-uninstall/fast:
-	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-.PHONY : uninstall/fast
-
-#=============================================================================
-# Target rules for targets named px4_ros_com_uninstall
-
-# Build rule for target.
-px4_ros_com_uninstall: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 px4_ros_com_uninstall
-.PHONY : px4_ros_com_uninstall
-
-# fast build rule for target.
-px4_ros_com_uninstall/fast:
-	$(MAKE) -f CMakeFiles/px4_ros_com_uninstall.dir/build.make CMakeFiles/px4_ros_com_uninstall.dir/build
-.PHONY : px4_ros_com_uninstall/fast
 
 #=============================================================================
 # Target rules for targets named frame_transforms
@@ -272,6 +246,32 @@ sensor_combined_listener/fast:
 .PHONY : sensor_combined_listener/fast
 
 #=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+#=============================================================================
+# Target rules for targets named px4_ros_com_uninstall
+
+# Build rule for target.
+px4_ros_com_uninstall: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 px4_ros_com_uninstall
+.PHONY : px4_ros_com_uninstall
+
+# fast build rule for target.
+px4_ros_com_uninstall/fast:
+	$(MAKE) -f CMakeFiles/px4_ros_com_uninstall.dir/build.make CMakeFiles/px4_ros_com_uninstall.dir/build
+.PHONY : px4_ros_com_uninstall/fast
+
+#=============================================================================
 # Target rules for targets named Odom_transform
 
 # Build rule for target.
@@ -296,45 +296,6 @@ Odom_transform_real: cmake_check_build_system
 Odom_transform_real/fast:
 	$(MAKE) -f CMakeFiles/Odom_transform_real.dir/build.make CMakeFiles/Odom_transform_real.dir/build
 .PHONY : Odom_transform_real/fast
-
-#=============================================================================
-# Target rules for targets named offboard_control_vel
-
-# Build rule for target.
-offboard_control_vel: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 offboard_control_vel
-.PHONY : offboard_control_vel
-
-# fast build rule for target.
-offboard_control_vel/fast:
-	$(MAKE) -f CMakeFiles/offboard_control_vel.dir/build.make CMakeFiles/offboard_control_vel.dir/build
-.PHONY : offboard_control_vel/fast
-
-#=============================================================================
-# Target rules for targets named offboard_control_absolute_version
-
-# Build rule for target.
-offboard_control_absolute_version: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 offboard_control_absolute_version
-.PHONY : offboard_control_absolute_version
-
-# fast build rule for target.
-offboard_control_absolute_version/fast:
-	$(MAKE) -f CMakeFiles/offboard_control_absolute_version.dir/build.make CMakeFiles/offboard_control_absolute_version.dir/build
-.PHONY : offboard_control_absolute_version/fast
-
-#=============================================================================
-# Target rules for targets named offboard_simple
-
-# Build rule for target.
-offboard_simple: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 offboard_simple
-.PHONY : offboard_simple
-
-# fast build rule for target.
-offboard_simple/fast:
-	$(MAKE) -f CMakeFiles/offboard_simple.dir/build.make CMakeFiles/offboard_simple.dir/build
-.PHONY : offboard_simple/fast
 
 src/examples/advertisers/debug_vect_advertiser.o: src/examples/advertisers/debug_vect_advertiser.cpp.o
 
@@ -497,87 +458,6 @@ src/examples/offboard/offboard_control.s: src/examples/offboard/offboard_control
 src/examples/offboard/offboard_control.cpp.s:
 	$(MAKE) -f CMakeFiles/offboard_control.dir/build.make CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.s
 .PHONY : src/examples/offboard/offboard_control.cpp.s
-
-src/examples/offboard/offboard_control_absolute_version.o: src/examples/offboard/offboard_control_absolute_version.cpp.o
-
-.PHONY : src/examples/offboard/offboard_control_absolute_version.o
-
-# target to build an object file
-src/examples/offboard/offboard_control_absolute_version.cpp.o:
-	$(MAKE) -f CMakeFiles/offboard_control_absolute_version.dir/build.make CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.o
-.PHONY : src/examples/offboard/offboard_control_absolute_version.cpp.o
-
-src/examples/offboard/offboard_control_absolute_version.i: src/examples/offboard/offboard_control_absolute_version.cpp.i
-
-.PHONY : src/examples/offboard/offboard_control_absolute_version.i
-
-# target to preprocess a source file
-src/examples/offboard/offboard_control_absolute_version.cpp.i:
-	$(MAKE) -f CMakeFiles/offboard_control_absolute_version.dir/build.make CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.i
-.PHONY : src/examples/offboard/offboard_control_absolute_version.cpp.i
-
-src/examples/offboard/offboard_control_absolute_version.s: src/examples/offboard/offboard_control_absolute_version.cpp.s
-
-.PHONY : src/examples/offboard/offboard_control_absolute_version.s
-
-# target to generate assembly for a file
-src/examples/offboard/offboard_control_absolute_version.cpp.s:
-	$(MAKE) -f CMakeFiles/offboard_control_absolute_version.dir/build.make CMakeFiles/offboard_control_absolute_version.dir/src/examples/offboard/offboard_control_absolute_version.cpp.s
-.PHONY : src/examples/offboard/offboard_control_absolute_version.cpp.s
-
-src/examples/offboard/offboard_control_vel.o: src/examples/offboard/offboard_control_vel.cpp.o
-
-.PHONY : src/examples/offboard/offboard_control_vel.o
-
-# target to build an object file
-src/examples/offboard/offboard_control_vel.cpp.o:
-	$(MAKE) -f CMakeFiles/offboard_control_vel.dir/build.make CMakeFiles/offboard_control_vel.dir/src/examples/offboard/offboard_control_vel.cpp.o
-.PHONY : src/examples/offboard/offboard_control_vel.cpp.o
-
-src/examples/offboard/offboard_control_vel.i: src/examples/offboard/offboard_control_vel.cpp.i
-
-.PHONY : src/examples/offboard/offboard_control_vel.i
-
-# target to preprocess a source file
-src/examples/offboard/offboard_control_vel.cpp.i:
-	$(MAKE) -f CMakeFiles/offboard_control_vel.dir/build.make CMakeFiles/offboard_control_vel.dir/src/examples/offboard/offboard_control_vel.cpp.i
-.PHONY : src/examples/offboard/offboard_control_vel.cpp.i
-
-src/examples/offboard/offboard_control_vel.s: src/examples/offboard/offboard_control_vel.cpp.s
-
-.PHONY : src/examples/offboard/offboard_control_vel.s
-
-# target to generate assembly for a file
-src/examples/offboard/offboard_control_vel.cpp.s:
-	$(MAKE) -f CMakeFiles/offboard_control_vel.dir/build.make CMakeFiles/offboard_control_vel.dir/src/examples/offboard/offboard_control_vel.cpp.s
-.PHONY : src/examples/offboard/offboard_control_vel.cpp.s
-
-src/examples/offboard/offboard_simple.o: src/examples/offboard/offboard_simple.cpp.o
-
-.PHONY : src/examples/offboard/offboard_simple.o
-
-# target to build an object file
-src/examples/offboard/offboard_simple.cpp.o:
-	$(MAKE) -f CMakeFiles/offboard_simple.dir/build.make CMakeFiles/offboard_simple.dir/src/examples/offboard/offboard_simple.cpp.o
-.PHONY : src/examples/offboard/offboard_simple.cpp.o
-
-src/examples/offboard/offboard_simple.i: src/examples/offboard/offboard_simple.cpp.i
-
-.PHONY : src/examples/offboard/offboard_simple.i
-
-# target to preprocess a source file
-src/examples/offboard/offboard_simple.cpp.i:
-	$(MAKE) -f CMakeFiles/offboard_simple.dir/build.make CMakeFiles/offboard_simple.dir/src/examples/offboard/offboard_simple.cpp.i
-.PHONY : src/examples/offboard/offboard_simple.cpp.i
-
-src/examples/offboard/offboard_simple.s: src/examples/offboard/offboard_simple.cpp.s
-
-.PHONY : src/examples/offboard/offboard_simple.s
-
-# target to generate assembly for a file
-src/examples/offboard/offboard_simple.cpp.s:
-	$(MAKE) -f CMakeFiles/offboard_simple.dir/build.make CMakeFiles/offboard_simple.dir/src/examples/offboard/offboard_simple.cpp.s
-.PHONY : src/examples/offboard/offboard_simple.cpp.s
 
 src/lib/frame_transforms.o: src/lib/frame_transforms.cpp.o
 
@@ -3099,9 +2979,6 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... test"
-	@echo "... uninstall"
-	@echo "... px4_ros_com_uninstall"
 	@echo "... frame_transforms"
 	@echo "... offboard_control"
 	@echo "... micrortps_agent"
@@ -3109,13 +2986,13 @@ help:
 	@echo "... debug_vect_advertiser"
 	@echo "... install/local"
 	@echo "... sensor_combined_listener"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
+	@echo "... uninstall"
+	@echo "... px4_ros_com_uninstall"
+	@echo "... test"
 	@echo "... Odom_transform"
+	@echo "... rebuild_cache"
 	@echo "... Odom_transform_real"
-	@echo "... offboard_control_vel"
-	@echo "... offboard_control_absolute_version"
-	@echo "... offboard_simple"
+	@echo "... edit_cache"
 	@echo "... src/examples/advertisers/debug_vect_advertiser.o"
 	@echo "... src/examples/advertisers/debug_vect_advertiser.i"
 	@echo "... src/examples/advertisers/debug_vect_advertiser.s"
@@ -3134,15 +3011,6 @@ help:
 	@echo "... src/examples/offboard/offboard_control.o"
 	@echo "... src/examples/offboard/offboard_control.i"
 	@echo "... src/examples/offboard/offboard_control.s"
-	@echo "... src/examples/offboard/offboard_control_absolute_version.o"
-	@echo "... src/examples/offboard/offboard_control_absolute_version.i"
-	@echo "... src/examples/offboard/offboard_control_absolute_version.s"
-	@echo "... src/examples/offboard/offboard_control_vel.o"
-	@echo "... src/examples/offboard/offboard_control_vel.i"
-	@echo "... src/examples/offboard/offboard_control_vel.s"
-	@echo "... src/examples/offboard/offboard_simple.o"
-	@echo "... src/examples/offboard/offboard_simple.i"
-	@echo "... src/examples/offboard/offboard_simple.s"
 	@echo "... src/lib/frame_transforms.o"
 	@echo "... src/lib/frame_transforms.i"
 	@echo "... src/lib/frame_transforms.s"

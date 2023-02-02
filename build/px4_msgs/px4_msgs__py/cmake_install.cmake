@@ -1,8 +1,8 @@
-# Install script for directory: /home/jingyan/px4_ros_com_ros2/build/px4_msgs/px4_msgs__py
+# Install script for directory: /home/jingyan/mmWave_drone_SLAM/build/px4_msgs/px4_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jingyan/px4_ros_com_ros2/install/px4_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/jingyan/mmWave_drone_SLAM/install/px4_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

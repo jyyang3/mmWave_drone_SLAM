@@ -1,1 +1,4 @@
-/home/jingyan/px4_ros_com_ros2/src/px4_msgs/msg/Timesync.msg
+uint64 timestamp	       # time since system start (microseconds)
+uint8 seq		       # timesync msg sequence
+int64 tc1		       # time sync timestamp 1
+int64 ts1		       # time sync timestamp 2

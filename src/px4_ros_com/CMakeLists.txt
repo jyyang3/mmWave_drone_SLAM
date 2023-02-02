@@ -110,9 +110,9 @@ custom_executable(examples/advertisers debug_vect_advertiser)
 custom_executable(examples/offboard offboard_control)
 custom_executable(examples/offboard Odom_transform)
 custom_executable(examples/offboard Odom_transform_real)
-custom_executable(examples/offboard offboard_control_vel)
-custom_executable(examples/offboard offboard_control_absolute_version)
-custom_executable(examples/offboard offboard_simple)
+#custom_executable(examples/offboard offboard_control_vel)
+#custom_executable(examples/offboard offboard_control_absolute_version)
+#custom_executable(examples/offboard offboard_simple)
 ############
 # Install ##
 ############
