@@ -1,3 +1,4 @@
+/home/jingyan/mmWave_drone_SLAM/install/mmwave_drone_navigation2/share/mmwave_drone_navigation2/launch/navigation2_rviz.launch .py
 /home/jingyan/mmWave_drone_SLAM/install/mmwave_drone_navigation2/share/mmwave_drone_navigation2/launch/navigation2.launch.py
 /home/jingyan/mmWave_drone_SLAM/install/mmwave_drone_navigation2/share/mmwave_drone_navigation2/launch/navigation2
 /home/jingyan/mmWave_drone_SLAM/install/mmwave_drone_navigation2/share/mmwave_drone_navigation2/param/mmWave_drone_nav2.yaml
